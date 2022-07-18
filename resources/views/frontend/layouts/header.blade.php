@@ -18,7 +18,7 @@
           <li><a href="pricing.html">Votre sécurité</a></li>
         
           <li><a href="contact.html">Contact</a></li>
-          <li><a class="get-a-quote" href="get-a-quote.html">Ouvrir un compte Epargne/ <br>Courant Personnel/d'Affaire</a></li>
+          <li><a class="get-a-quote" href="get-a-quote.html">Ouvrir un compte  Personnel/d'Affaire</a></li>
 
           <li class="dropdown"><a href="#"><span>Langues</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul >
