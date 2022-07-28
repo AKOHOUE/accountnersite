@@ -41,7 +41,7 @@
               <li data-aos="fade-up" data-aos-delay="100">
                 <i class="bi bi-diagram-3"></i>
                 <div>
-                  <p>   Sécurité des transactions .</p>
+                  <p>Sécurité des transactions.</p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay="200">
