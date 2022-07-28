@@ -22,7 +22,7 @@ use App\Http\Controllers\FrontendController;
  Route::get('/','App\Http\Controllers\FrontendController@home')->name('front.home');
  Route::get('about', 'App\Http\Controllers\FrontendController@about')->name('front.about');
  Route::get('services', 'App\Http\Controllers\FrontendController@services')->name('front.services');
- Route::get('secure', 'App\Http\Controllers\FrontendController@secure')->name('front.secure');
+ Route::get('prot', 'App\Http\Controllers\FrontendController@prot')->name('front.prot');
  Route::get('contact', 'App\Http\Controllers\FrontendController@contact')->name('front.contact');
  Route::get('compte', 'App\Http\Controllers\FrontendController@compte')->name('front.compte');
 

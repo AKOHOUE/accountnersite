@@ -25,9 +25,9 @@ class FrontendController extends Controller
     {
         return view("frontend.services");
     }
-    public function secure()
+    public function prot()
     {
-        return view("frontend.secure");
+        return view("frontend.prot");
     }
 
     public function contact()
