@@ -11,11 +11,33 @@ class FrontendController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function home()
     {
         return view("frontend.homeContent");
     }
 
+    public function about()
+    {
+        return view("frontend.about");
+    }
+
+    public function services()
+    {
+        return view("frontend.services");
+    }
+    public function secure()
+    {
+        return view("frontend.secure");
+    }
+
+    public function contact()
+    {
+        return view("frontend.contact");
+    }
+    public function compte()
+    {
+        return view("frontend.accounte");
+    }
     /**
      * Show the form for creating a new resource.
      *
