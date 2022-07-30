@@ -23,18 +23,18 @@ class CreateHelpsTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('firstname', 45)->nullable();
-            $table->string('lastname', 45)->nullable();
-            $table->string('email', 45)->nullable();
-            $table->string('phone', 45)->nullable();
-            $table->string('adresse', 45)->nullable();
-            $table->string('piece', 45)->nullable();
-            $table->string('typePiece', 45)->nullable();
-            $table->string('montant', 45)->nullable();
-            $table->string('raison', 45)->nullable();
-            $table->string('profession', 45)->nullable();
-            $table->string('birthday', 45)->nullable();
-            $table->string('others', 45)->nullable();
+            $table->string('firstname')->nullable();
+            $table->string('lastname')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('adresse')->nullable();
+            $table->string('piece')->nullable();
+            $table->string('typePiece')->nullable();
+            $table->string('montant')->nullable();
+            $table->string('raison')->nullable();
+            $table->string('profession')->nullable();
+            $table->string('birthday')->nullable();
+            $table->string('others')->nullable();
             $table->timestamps();
 
         });

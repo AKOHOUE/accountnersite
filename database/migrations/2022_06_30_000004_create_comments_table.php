@@ -23,13 +23,13 @@ class CreateCommentsTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('author', 45)->nullable();
-            $table->string('email', 45)->nullable();
-            $table->string('commentaire', 45)->nullable();
+            $table->string('author')->nullable();
+            $table->string('email')->nullable();
+            $table->string('commentaire')->nullable();
             $table->timestamps();
-            $table->string('others', 45)->nullable();
+            $table->string('others')->nullable();
             $table->integer('blog_id');
-            $table->string('commenter', 45)->nullable();
+            $table->string('commenter')->nullable();
             $table->index(["blog_id"], 'fk_comments_blog1_idx');
 
 

@@ -24,32 +24,34 @@ class CreateUsersTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('username', 45)->nullable();
-            $table->string('firstname', 45)->nullable();
-            $table->string('lastname', 45)->nullable();
-            $table->string('email', 45);
-            $table->string('phone', 45)->nullable();
+            $table->string('username')->nullable();
+            $table->string('firstname')->nullable();
+            $table->string('lastname')->nullable();
+            $table->string('email');
+            $table->string('phone')->nullable();
             $table->string('photo')->nullable();
-            $table->string('solde', 45)->nullable();
-            $table->string('compteSolde', 45)->nullable();
-            $table->string('AccountUsercol', 45)->nullable();
-            $table->string('swift', 45)->nullable();
-            $table->string('bic', 45)->nullable();
-            $table->string('isActif', 45)->nullable();
-            $table->string('profession', 45)->nullable();
-            $table->string('adresse', 45)->nullable();
-            $table->string('city', 45)->nullable();
-            $table->string('country', 45)->nullable();
-            $table->string('others', 45)->nullable();
-            $table->string('single', 45)->nullable();
-            $table->string('genre', 45)->nullable();
-            $table->string('birthday', 45)->nullable();
-            $table->string('isAdmin', 45)->nullable();
-            $table->string('password', 45)->nullable();
-            $table->string('charge', 45)->nullable();
-            $table->string('workCompagny', 45)->nullable();
+            $table->string('solde')->nullable();
+            $table->string('compteSolde')->nullable();
+            $table->string('swift')->nullable();
+            $table->string('bic')->nullable();
+            $table->string('isActif')->nullable();
+            $table->string('profession')->nullable();
+            $table->string('adresse')->nullable();
+            $table->string('city')->nullable();
+            $table->string('country')->nullable();
+            $table->string('others')->nullable();
+            $table->string('single')->nullable();
+            $table->string('genre')->nullable();
+            $table->string('birthday')->nullable();
+            $table->string('isAdmin')->nullable();
+            $table->string('password')->nullable();
+            $table->string('charge')->nullable();
+            $table->string('workCompagny')->nullable();
             $table->string('piece')->nullable();
-            $table->string('typePiece', 45)->nullable();
+            $table->string('typePiece')->nullable();
+            $table->string('typeAccounte')->nullable();
+
+            
             $table->timestamps();
 
             $table->unique(["email"], 'email_UNIQUE');
