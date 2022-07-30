@@ -4,7 +4,7 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="{{ route('front.home') }}" class="logo d-flex align-items-center">
-            <span>RFGB</span>
+            <img src="{{ asset('') }}assets/img/logo.png" alt=""> 
           </a>
           <p>ulis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
