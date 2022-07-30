@@ -1,3 +1,7 @@
+@section('title')
+  Mon Compte
+  
+@endsection
 @extends('frontend.layouts.app')
 
 @section('content')

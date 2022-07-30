@@ -1,3 +1,7 @@
+@section('title')
+  Contact
+  
+@endsection
 @extends('frontend.layouts.app')
 
 @section('content')
@@ -48,7 +52,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>fffff</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -56,7 +60,7 @@
               <i class="bi bi-phone flex-shrink-0"></i>
               <div>
                 <h4>Téléphone(s):</h4>
-                <p>+1 5589 55488 55</p>
+                <p>fffff</p>
               </div>
             </div><!-- End Info Item -->
 

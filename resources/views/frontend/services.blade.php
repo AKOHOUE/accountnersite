@@ -1,3 +1,7 @@
+@section('title')
+  Services
+  
+@endsection
 @extends('frontend.layouts.app')
 
 @section('content')

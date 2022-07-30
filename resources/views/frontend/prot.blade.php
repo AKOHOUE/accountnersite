@@ -1,3 +1,7 @@
+@section('title')
+  Sécurité
+  
+@endsection
 @extends('frontend.layouts.app')
 
 @section('content')
