@@ -90,6 +90,13 @@
                         </select>
                 </div>
 
+                 <div class="form-group col-md-12">
+                        <select name="typeAccounte" class="form-control" placeholder="Type de compte" id="exampleFormControlSelect8">
+                                <option>Epargne</option>
+                                <option>Courant</option>
+                        </select>
+                </div>
+
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="city" placeholder="Vile" required>
                 </div>
