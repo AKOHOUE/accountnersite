@@ -13,7 +13,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>A propos de nous</h2>
+              <h2>Espace Client</h2>
             </div>
           </div>
         </div>

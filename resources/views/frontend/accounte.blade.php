@@ -77,9 +77,6 @@
                   <input type="text" name="profession" class="form-control" placeholder="Profession" required>
                 </div>
 
-                <div class="col-md-12 ">
-                  <input type="text" class="form-control" name="email" placeholder="Email" required>
-                </div>
                 <div class="form-group col-md-12">
                         <select name="country" class="form-control" placeholder="Pays" id="exampleFormControlSelect1">
                                 <option>France</option>
