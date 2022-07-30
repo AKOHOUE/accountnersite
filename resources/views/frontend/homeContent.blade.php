@@ -347,7 +347,8 @@ Il en résulte un système de sécurisation complet et complexe.
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-Je suis fière de me faire accompagner par RFGB dans la réalisations de mes projets professionnels.                   <i class="bi bi-quote quote-icon-right"></i>
+Je suis fière de me faire accompagner par RFGB dans la réalisations de mes projets professionnels.              
+     <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
@@ -361,7 +362,8 @@ Je suis fière de me faire accompagner par RFGB dans la réalisations de mes pro
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-Le groupe le plus scial que RFGB je n'ai pas encore vu dans dans le monde.                  <i class="bi bi-quote quote-icon-right"></i>
+Le groupe le plus scial que RFGB je n'ai pas encore vu dans dans le monde.                  
+<i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
