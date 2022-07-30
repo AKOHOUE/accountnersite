@@ -267,8 +267,8 @@ Si on place autant à 2 % (une assurance-vie sur une allocation défensive par e
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <span>Questions féquemment posées</span>
-          <h2>Questions féquemment posées</h2>
+          <span>Questions fréquemment posées</span>
+          <h2>Questions fréquemment posées</h2>
 
         </div>
 
