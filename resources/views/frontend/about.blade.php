@@ -48,17 +48,11 @@
               <li data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-fullscreen-exit"></i>
                 <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                  <h5>Urbanisation des états en voies de développement dans le monde</h5>
+                  <p> </p>
                 </div>
               </li>
-              <li data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-broadcast"></i>
-                <div>
-                  <h5>Voluptatem et qui exercitationem</h5>
-                  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
-                </div>
-              </li>
+            
             </ul>
           </div>
         </div>
@@ -179,7 +173,7 @@
       </div>
     </section><!-- End Our Team Section -->
 
-    <!-- ======= Testimonials Section ======= -->
+<!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container">
 
@@ -188,80 +182,70 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="{{ asset('') }}assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bi bi-quote quote-icon-right"></i>
+Je suis fière de me faire accompagner par RFGB dans la réalisations de mes projets professionnels.                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <img src="{{ asset('') }}assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bi bi-quote quote-icon-right"></i>
+Le groupe le plus scial que RFGB je n'ai pas encore vu dans dans le monde.                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <img src="{{ asset('') }}assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bi bi-quote quote-icon-right"></i>
+Pour épargner, vous pouvez notamment, sous certaines conditions, ouvrir des livrets d'épargne réglementée (Livret A, Livret de développement durable et solidaire, Livret d'épargne populaire, Livret Jeune, Plan et Compte épargne logement), un compte sur livret ou un compte à terme.                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <img src="{{ asset('') }}assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bi bi-quote quote-icon-right"></i>
+Ils m'ont octroyer beaucoup d'argent pour financier les études de mes enfants.                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <img src="{{ asset('') }}assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bi bi-quote quote-icon-right"></i>
+Si on place autant à 2 % (une assurance-vie sur une allocation défensive par exemple) alors l’enfant aura 29 471 €.J'en suis bénéficiaire.                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
@@ -273,13 +257,13 @@
       </div>
     </section><!-- End Testimonials Section -->
 
-    <!-- ======= Frequently Asked Questions Section ======= -->
+     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <span>Frequently Asked Questions</span>
-          <h2>Frequently Asked Questions</h2>
+          <span>Questions féquemment posées</span>
+          <h2>Questions féquemment posées</h2>
 
         </div>
 
@@ -292,13 +276,11 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Non consectetur a erat nam at lectus urna duis?
-                  </button>
+ Qu'est-ce que l'inclusion financière et quels sont ses enjeux ?                  </button>
                 </h3>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                  </div>
+L'inclusion financière caractérise, en général, la possibilité offerte aux populations et aux entreprises, d’accéder à des conditions supportables, à toute une gamme de produits et de services financiers utiles et adaptés à leurs besoins (transactions, paiements, épargne, crédit et assurance), proposés par des prestataires formels, fiables et responsables.                  </div>
                 </div>
               </div><!-- # Faq item-->
 
@@ -306,13 +288,11 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                  </button>
+Qu'est-ce que les données personnelles ?                  </button>
                 </h3>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </div>
+Toute information personnelle, y compris les informations personnelles sensibles, relative à une personne concernée. Par exemple, adresse, date de naissance, nom, lieu et nationalité.                  </div>
                 </div>
               </div><!-- # Faq item-->
 
@@ -320,13 +300,11 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
-                  </button>
+Qui est un Délégué à la Protection des Données ?                  </button>
                 </h3>
                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </div>
+Une personne travaillant pour un Contrôleur ou un Sous-traitant ayant une connaissance approfondie des lois et des normes de confidentialité des données. Le délégué à la protection des données (DPD) informe le responsable du traitement ou le sous-traitant de ses obligations conformément au RGPD et surveille sa mise en œuvre. Le DPO agit comme agent de liaison entre le responsable du traitement/sous-traitant et l'autorité de contrôle.                  </div>
                 </div>
               </div><!-- # Faq item-->
 
@@ -334,14 +312,14 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                  </button>
+Comment RFGB s'assure-t-elle que les informations de l'utilisateur sont protégées après leur partage avec les vors ?                  </button>
                 </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </div>
+peut partager les informations de l'utilisateur avec des processeurs tiers (tels que des prestataires de services ou des VOR). Les contrats avec des sous-traitants tiers nécessitent des mesures de sécurité techniques et organisationnelles suffisantes, limitent l'utilisation des informations de l'utilisateur aux fins définies par les affiliés et conservent le contrôle des informations de l'utilisateur, le cas échéant.
+
+En outre, RFGB ne transférera les informations utilisateur des utilisateurs situés dans l'UE qu'à des processeurs tiers qui offrent un niveau de protection adéquat lors du traitement des informations utilisateur (par exemple en concluant des contrats basés sur les clauses types pour le transfert des informations utilisateur de l'UE aux processeurs établis dans des pays tiers publiés par la Commission européenne). Les accords avec des sous-traitants tiers prévoient des recours juridiques en cas de violation de l'accord.                  </div>
                 </div>
               </div><!-- # Faq item-->
 
@@ -349,13 +327,24 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
                     <i class="bi bi-question-circle question-icon"></i>
-                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-                  </button>
+Comment fermer mon compte ?                  </button>
                 </h3>
                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                  </div>
+Pour fermer votre compte avec RFGB, visitez l'une de nos succursales ou rendez-vous sur le site Web du produit et soumettez une demande. Nous supprimerons vos informations personnelles, ou les rendrons anonymes, dès que raisonnablement possible en fonction de l'activité de votre compte et dans conformément à la loi applicable. Nous pouvons fermer un compte ou conserver vos informations pour mener une enquête ou si la loi l'exige.
+
+Nous pouvons également conserver les informations de compte pour effectuer l'une des opérations suivantes :
+
+Se conformer à la loi
+Prévenir la fraude
+Percevez tous les frais dus
+Résoudre les différends
+Résoudre les problèmes
+Assister aux enquêtes
+Appliquer les termes et conditions d"un site
+Se conformer aux exigences légales
+Prendre d'autres mesures autrement autorisées par la loi applicable
+Une fois que nous n'avons plus besoin de conserver les informations, elles sont effacées conformément à nos politiques de conservation et de suppression.                  </div>
                 </div>
               </div><!-- # Faq item-->
 

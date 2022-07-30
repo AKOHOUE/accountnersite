@@ -37,19 +37,23 @@
             <h3>LA FORCE D’UN GROUPE DE RÉFÉRENCE POUR TOUTE OPERATIONS SECURISEES</h3>
             <p>
            Il existe un Fonds de garantie des dépôts et de résolution qui protège les titulaires de comptes en cas de défaillance de la banque. Toutes les banques établies en Europe adhèrent à ce fonds. Les avoirs sont couverts jusqu'à 100 000 € par personne et par établissement.            </p>
+            Les transactions électroniques sont au cœur de la transformation digitale des entreprises
+
+Les attaques qui touchent les transactions électroniques sont essentiellement de nature frauduleuse et menées dans un but financier :
+Les compromissions de données
+Le déni de services (et demande de rançon)
+Les transactions frauduleuses
+L’usurpation d’identité
+Le vol de données
+Pour contrer ces attaques, quatre niveaux de sécurisation sont mis en place :
+Les terminaux (identités, données résidentes, flux, applications)
+Le site référent (identités, contrôle de fraude, données résidentes, flux)
+Les sites partenaires
+Les flux, en d’autres termes des services web échangés.
+Il en résulte un système de sécurisation complet et complexe.
+            
             <ul>
-              <li data-aos="fade-up" data-aos-delay="100">
-                <i class="bi bi-diagram-3"></i>
-                <div>
-                  <p>Sécurité des transactions.</p>
-                </div>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-fullscreen-exit"></i>
-                <div>
-                  <h5>Carte sécurité avec code unique.</h5>
-                </div>
-              </li>
+           
            
             </ul>
           </div>

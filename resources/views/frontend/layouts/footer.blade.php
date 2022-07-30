@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="{{ route('front.home') }}" class="logo d-flex align-items-center">
             <span>RFGB</span>
           </a>
           <p>ulis eu non diam phasellus.</p>
@@ -18,27 +18,16 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Liens Utiles</h4>
           <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Nous connaitre</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Votre sécurité</a></li>
-            <li><a href="#">Actualités</a></li>
+            <li><a href="{{ route('front.about') }}">Nous connaitre</a></li>
+            <li><a href="{{ route('front.services') }}">Services</a></li>
+            <li><a href="{{ route('front.prot') }}">Votre sécurité</a></li>
+            <li><a href="{{ route('front.contact') }}">Nous joindre</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#">Crédit</a></li>
-            <li><a href="#">Emprunt</a></li>
-            <li><a href="#">Assurance</a></li>
-            <li><a href="#">Immobilier</a></li>
-            <li><a href="#">Santé , Bourse et autres aides  sociaux</a></li>
-          </ul>
-        </div>
+ 
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact</h4>
+          <h4>Adresses & Contact</h4>
           <p>
             A108 Adam Street <br>
             New York, NY 535022<br>
@@ -54,11 +43,12 @@
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>RFGB</span></strong>. All Rights Reserved
       </div>
-      <div class="credits">
-        Designed by <a href="/">RFGB</a>
-      </div>
+      
     </div>
   </footer><!-- End Footer -->
   <!-- End Footer -->
+
+
+ 
