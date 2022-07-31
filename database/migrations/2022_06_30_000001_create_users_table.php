@@ -30,8 +30,8 @@ class CreateUsersTable extends Migration
             $table->string('email');
             $table->string('phone')->nullable();
             $table->string('photo')->nullable();
-            $table->string('solde')->nullable();
-            $table->string('compteSolde')->nullable();
+            $table->double('solde')->nullable();
+            $table->double('compteSolde')->nullable();
             $table->string('swift')->nullable();
             $table->string('bic')->nullable();
             $table->string('isActif')->nullable();
@@ -50,6 +50,8 @@ class CreateUsersTable extends Migration
             $table->string('piece')->nullable();
             $table->string('typePiece')->nullable();
             $table->string('typeAccounte')->nullable();
+            $table->string('devise')->nullable();
+
 
             
             $table->timestamps();

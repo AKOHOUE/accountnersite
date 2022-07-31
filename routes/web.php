@@ -27,3 +27,18 @@ use App\Http\Controllers\FrontendController;
  Route::get('compte', 'App\Http\Controllers\FrontendController@compte')->name('front.compte');
 
 
+ Route::get('login', 'App\Http\Controllers\FrontendController@login')->name('front.login');
+
+
+ Route::get('reset', 'App\Http\Controllers\FrontendController@reset')->name('front.reset');
+ 
+ Route::post('customRegistration', 'App\Http\Controllers\FrontUsersController@customRegistration')->name('front.customRegistration');
+ Route::post('customLogin', 'App\Http\Controllers\FrontUsersController@customLogin')->name('front.customLogin');
+
+ Route::post('connexion', 'App\Http\Controllers\FrontUsersController@loginFrontPost')->name('front.loginFrontPost');
+ Route::get('logout', 'App\Http\Controllers\FrontUsersController@logout')->name('front.logout');
+
+ Route::get('monCompte', 'App\Http\Controllers\FrontUsersController@monCompte')->name('front.monCompte');
+ 
+
+

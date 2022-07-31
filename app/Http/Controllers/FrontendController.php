@@ -38,6 +38,15 @@ class FrontendController extends Controller
     {
         return view("frontend.accounte");
     }
+
+    public function login()
+    {
+        return view("frontend.login");
+    }
+    public function reset()
+    {
+        return view("frontend.reset");
+    }
     /**
      * Show the form for creating a new resource.
      *

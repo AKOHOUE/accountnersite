@@ -20,8 +20,30 @@
           <li><a href="{{ route('front.prot') }}" class="{{ Request::segment(1) === 'prot' ? 'active' : null }}">Votre sécurité</a></li>
           <li><a href="{{ route('front.contact') }}" class="{{ Request::segment(1) === 'contact' ? 'active' : null }}">Contact</a></li>
           <!--li><a href="https://wa.me/40751819445">WhatsApp  <i style="color:green; font-size: " class="fa fa-whatsapp"></i></a></li-->
-          <li  style="margin-left:100px">
-          <a class="get-a-quote" class="{{ Request::segment(1) === 'compte' ? 'active' : null }} get-a-quote" href="{{ route('front.compte') }}" >Espace Client</a></li>
+ 
+               @if(auth()->guest())
+                                <li    style="margin-left:100px"  class="dropdown">
+                                                                           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Espace Client</a>
+
+
+                                <ul >
+                                    <li><a href="{{ route('front.compte') }}">Ouvrir un compte</a></li>  
+                                    <li><a href="{{ route('front.login') }}">Connexion </a></li> 
+                                </ul>
+                            </li>
+                        @else
+                       <li     class="dropdown"  style="margin-left:100px" >
+                                                       <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">{{ ucfirst(auth()->user()->firstname[0]) }}. {{ ucfirst(auth()->user()->lastname) }}</a>
+
+           
+                                
+                                <ul>
+                                    <li><a href="{{ route('front.monCompte') }}">Mon Compte</a></li>  
+                                    <li><a href="{{ route('front.logout') }}">Déconnexion</a></li> 
+                                </ul>
+                            </li>
+                        @endif
+        
           <li   style="margin-left:50px"  class="dropdown"><a href="#"><span>Langues</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul >
               <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(en)';location.reload();"><img src="{{ asset('assets/lang/en.png') }}">Anglais</a></li>

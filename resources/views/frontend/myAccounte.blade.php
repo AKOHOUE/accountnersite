@@ -9,11 +9,11 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/about.jpg');">
+      <div class="page-header d-flex align-items-center" style="background-image: url('{{ asset('') }}image/{{ucfirst(auth()->user()->photo) }}');">
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Espace Client</h2>
+              <h2>Bienvenue     {{ucfirst(auth()->user()->firstname)}}   {{ucfirst(auth()->user()->lastname)}}  </h2>
             </div>
           </div>
         </div>
@@ -33,32 +33,62 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
-          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-         
-          </div>
-          <div class="col-lg-6 content order-last  order-lg-first">
-            <h3>LA FORCE D’UN GROUPE DE RÉFÉRENCE</h3>
-            <p>
-            Né il y a plus de 75 ans au Mali, le Groupe compte aujourd’hui près de 6 000 collaborateurs. Les performances sont au rendez-vous puisque le Groupe présente au 31 décembre 2021 un total de bilan consolidé de 9,4 milliards d’euros et enregistre à cette date un bénéfice net consolidé de 164,5 millions d’euros.
-            </p>
+       
+            <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+                            <legend>Informations de compte</legend>
+
+            <p>      {{ucfirst(auth()->user()->firstname) }}     {{ucfirst(auth()->user()->lastname) }}  </p>
+          
+                            @if(auth()->user()->solde < 10)
+                             <div class="row well2">
+                                    <div><h3>  <br> Compte non activé. Veuillez contacter RFG BANK pour finaliser l'activation de votre compte.</h3></div>
+                                </div>
+                                @endif
             <ul>
-              <li data-aos="fade-up" data-aos-delay="100">
-                 <div>
-                  <p>   Un leadership historique, une réussite panafricaine, un déploiement international.</p>
-                </div>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="200">
-                 <div>
-                  <h5>Urbanisation des états en voies de développement dans le monde</h5>
-                  <p> </p>
-                </div>
-              </li>
-            
+                     <div class="col-sm-8"  data-aos="fade-up" data-aos-delay="100">
+                            <div>
+                               
+                 
+                                <p>Email: {{auth()->user()->email}}</p>
+                                <p>Pays: {{auth()->user()->country}}</p>
+                                <p>Téléphone: {{auth()->user()->phone}}</p>
+                                <p>Type de Compte : {{auth()->user()->typeAccounte}}</p>
+                                <p>Nom de la banque: RFGB</p>
+                                <p>IBAN: {{auth()->user()->bic ? auth()->user()->bic : ''}}</p>
+                                <p>SWIFT: {{auth()->user()->swift ? auth()->user()->swift : ''}}</p>
+                                <p>Votre solde actuel est de: {{auth()->user()->solde}} {{auth()->user()->devise}} </p>
+
+                                
+                            </div>
+                                     <p>Pièce d'Identité: <img style="width:80px, height:90px" src="{{ asset('') }}image/{{ucfirst(auth()->user()->piece) }}"  class="img-fluid" alt="">
+
+                                     </p>
+
+                        </div>
+             
+             
             </ul>
           </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <img src="{{ asset('') }}image/{{ucfirst(auth()->user()->photo) }}"  class="img-fluid" alt="">
+            <br> <br> <br> <br>
+                      <a href=" " class="btn" style="margin-bottom: 30px; color: #fff; background-color: #131d25">Faire un virement</a>
+                           <a  class="btn" href=" " style="margin-bottom: 30px; color:#fff; background-color: #131d25">Faire un dépôt</a>
+          </div>
         </div>
-
+     <div>
+              <div class="container">
+                <div>
+                    <col-lg-2>
+              
+                        
+                    </col-lg-2>
+                    <col-lg-2>
+                     
+                    </col-lg-2>
+                </div>
+            </div>
+                </div>
       </div>
     </section><!-- End About Us Section -->
  
