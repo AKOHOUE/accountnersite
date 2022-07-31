@@ -39,6 +39,9 @@ use App\Http\Controllers\FrontendController;
  Route::get('logout', 'App\Http\Controllers\FrontUsersController@logout')->name('front.logout');
 
  Route::get('monCompte', 'App\Http\Controllers\FrontUsersController@monCompte')->name('front.monCompte');
+
+
+ 
  
 
 
