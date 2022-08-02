@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Aide extends Model
 {
@@ -21,4 +22,8 @@ class Aide extends Model
  * @var array
  */
 protected $guarded = [];
+
+  public function setDateAttribute( $value ) {
+    $this->attributes['date'] = (new Carbon($value))->format('d/m/y');
+  }
 }

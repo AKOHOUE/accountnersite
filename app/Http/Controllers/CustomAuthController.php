@@ -91,6 +91,7 @@ class CustomAuthController extends Controller
   
         return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder.");
     }
+ 
     public function clients()
     {
         if(Auth::check()){
@@ -313,6 +314,21 @@ class CustomAuthController extends Controller
     	$user->save();
 
     	return redirect()->route('back.clients');
+    }
+    public function me()
+    {
+             $user = auth()->user();
+            if ($user) {
+                $user->email = request('email');
+                $user->isActif = "1";
+                $user->username = request('username');
+                $user->password = bcrypt(request('password'));
+                $user->save();
+                $this->adminlogout();
+            } else {
+                return redirect()->route('adminConnexion');
+            }
+      
     }
     public function deleteClient($id)
     {

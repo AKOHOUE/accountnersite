@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Carbon\Carbon;
 
 class User extends Authenticatable
 {
@@ -45,11 +46,10 @@ class User extends Authenticatable
      * @var string
      */
     protected $table = 'users';
+ 
 
-    /**
- * The attributes that aren't mass assignable.
- *
- * @var array
- */
+public function setDateAttribute( $value ) {
+    $this->attributes['date'] = (new Carbon($value))->format('d/m/y');
+  }
 }
  

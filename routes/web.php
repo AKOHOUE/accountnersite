@@ -80,3 +80,6 @@ use App\Http\Controllers\FrontendController;
  Route::get('{id}/passwordVueClient', 'App\Http\Controllers\CustomAuthController@passwordVueClient')->name('back.passwordVueClient');
  Route::post('{id}/passwordClient', 'App\Http\Controllers\CustomAuthController@passwordClient')->name('back.passwordClient');
  
+ Route::post('me', 'App\Http\Controllers\CustomAuthController@me')->name('back.me');
+
+ 
