@@ -22,21 +22,16 @@
           <!--li><a href="https://wa.me/40751819445">WhatsApp  <i style="color:green; font-size: " class="fa fa-whatsapp"></i></a></li-->
  
                @if(auth()->guest())
-                                <li    style="margin-left:100px"  class="dropdown">
-                                                                           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Espace Client</a>
-
-
+                        <li style="margin-left:100px"  class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Espace Client</a>
                                 <ul >
                                     <li><a href="{{ route('front.compte') }}">Ouvrir un compte</a></li>  
                                     <li><a href="{{ route('front.login') }}">Connexion </a></li> 
                                 </ul>
-                            </li>
+                        </li>
                         @else
-                       <li     class="dropdown"  style="margin-left:100px" >
-                                                       <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">{{ ucfirst(auth()->user()->firstname[0]) }}. {{ ucfirst(auth()->user()->lastname) }}</a>
-
-           
-                                
+                       <li class="dropdown"  style="margin-left:100px" >
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">{{ ucfirst(auth()->user()->firstname[0]) }}. {{ ucfirst(auth()->user()->lastname) }}</a>
                                 <ul>
                                     <li><a href="{{ route('front.monCompte') }}">Mon Compte</a></li>  
                                     <li><a href="{{ route('front.logout') }}">Déconnexion</a></li> 

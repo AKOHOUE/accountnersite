@@ -39,9 +39,13 @@
 
             <p>      {{ucfirst(auth()->user()->firstname) }}     {{ucfirst(auth()->user()->lastname) }}  </p>
           
-                            @if(auth()->user()->solde < 10)
+                            @if(auth()->user()->isActif=="0")
                              <div class="row well2">
                                     <div><h3>  <br> Compte non activé. Veuillez contacter RFG BANK pour finaliser l'activation de votre compte.</h3></div>
+                                </div>
+                                @else
+                                     <div class="row well2">
+                                    <div><h3>  <br> Compte  activé. </h3></div>
                                 </div>
                                 @endif
             <ul>
@@ -72,8 +76,14 @@
           <div class="col-lg-6 content order-last  order-lg-first">
             <img src="{{ asset('') }}image/{{ucfirst(auth()->user()->photo) }}"  class="img-fluid" alt="">
             <br> <br> <br> <br>
-                      <a href=" " class="btn" style="margin-bottom: 30px; color: #fff; background-color: #131d25">Faire un virement</a>
+               @if(auth()->user()->isActif=="0")
                            <a  class="btn" href=" " style="margin-bottom: 30px; color:#fff; background-color: #131d25">Faire un dépôt</a>
+
+                                @else
+                                        <a href=" " class="btn" style="margin-bottom: 30px; color: #fff; background-color: #131d25">Faire un virement</a>
+                           <a  class="btn" href=" " style="margin-bottom: 30px; color:#fff; background-color: #131d25">Faire un dépôt</a>
+
+                                @endif
           </div>
         </div>
      <div>

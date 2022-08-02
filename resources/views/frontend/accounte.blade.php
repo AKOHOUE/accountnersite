@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-md-6">
                    <span for="photo">Choisir le fichier de votre pièce d'identité</span>
-                  <input type="file" accept="image/*" name="photo" class="form-control" placeholder="Votre photo ">
+                  <input type="file" accept="image/*" name="photo" class="form-control" placeholder="Votre photo d'identité" required>
                   @if($errors->has('photo'))
                         <div class="alert alert-danger" role="alert">{{ $errors->first('photo') }}</div>
                     @endif
@@ -127,7 +127,7 @@
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" value="{{ old('city') }}" name="city" placeholder="Vile" required>
+                  <input type="text" class="form-control" value="{{ old('city') }}" name="city" placeholder="Ville" required>
                     @if($errors->has('city'))
                         <div class="alert alert-danger" role="alert">{{ $errors->first('city') }}</div>
                     @endif
@@ -178,8 +178,8 @@
                     @endif
                 </div>
                 <div class="col-md-12">
-                 <span for="piece">Choisir le fichier de votre pièce d'identité</span>
-                  <input type="file" class="form-control" value="{{ old('piece') }}" accept="image/*" name="piece" placeholder="Pièce d'identité">
+                 <span for="piece">Choisir le fichier de votre pièce d'identité valide(Passport ou Carte Nationale d'Identité)</span>
+                  <input type="file" class="form-control" value="{{ old('piece') }}" accept="image/*" name="piece" placeholder="Pièce d'identité valide" required>
                     @if($errors->has('piece'))
                         <div class="alert alert-danger" role="alert">{{ $errors->first('piece') }}</div>
                     @endif

@@ -22,7 +22,7 @@
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="8952845" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="809528" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Clients</p>
               </div>
             </div><!-- End Stats Item -->

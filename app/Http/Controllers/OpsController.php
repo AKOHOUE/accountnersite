@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Operation;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class OpsController extends Controller
 {
@@ -13,11 +15,22 @@ class OpsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+    
     {
+        if(auth()->guest()){
+            return redirect()->route('front.login');
+        }elseif (auth()->user()->isAdmin="0" && auth()->user()->isActif="1") {
+
         $operations = Operation::latest()->paginate(5);
+
+           return view('operations.index',compact('operations'))
+           ->with('i', (request()->input('page', 1) - 1) * 5);
+       }else{
+        return redirect()->route('front.login');
+       }
       
-        return view('operations.index',compact('operations'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+      
+       
     }
 
     /**
@@ -25,11 +38,14 @@ class OpsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function depot()
     {
-        return view('operations.create');
+        return view('front.depot');
     }
-
+    public function retrait()
+    {
+        return view('front.transfert');
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -41,20 +57,20 @@ class OpsController extends Controller
         $request->validate([
             'typeOperation' => 'required',
             'montant' => 'required',
-            'montantVire' => 'required',
-            'montantDepot' => 'required',
+            'montantVire' => 'string',
+            'montantDepot' => 'string',
             'raison' => 'required',
             'receveur' => 'required',
             'support' => 'required',
             'code1' => 'string',
-            'code2' => 'required',
-            'code3' => 'required',
-            'pending' => 'required',
+            'code2' => 'string',
+            'code3' => 'string',
+            'pending' => 'string',
             'salary' => 'string',
             'compagny' => 'string',
-            'temois' => 'required',
-            'temoinsMail1' => 'required',
-            'temoinsPhone1' => 'required',
+            'temois' => 'string',
+            'temoinsMail1' => 'string',
+            'temoinsPhone1' => 'string',
             'percentage' => 'string'
         ]);
 

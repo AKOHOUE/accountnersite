@@ -223,7 +223,12 @@ class FrontUsersController extends Controller
         $users->lastname = $request->lastname;
         $users->email = $request->email;
         $users->phone = $request->phone;
-        $users->photo = $profileImage;
+        if ($profileImage) {
+            $users->photo = $profileImage;
+        }else{
+            $users->photo = "NEANT";
+        }
+       
         $users->solde = $request->compteSolde;
         $users->compteSolde = $request->compteSolde;
         $users->password = bcrypt($request->password);
@@ -244,7 +249,12 @@ class FrontUsersController extends Controller
 
         $users->workCompagny = $request->workCompagny;
         $users->typePiece = $request->typePiece;
-        $users->piece = $piece;
+        if ($piece) {
+            $users->piece = $piece;
+
+        }else{
+            $users->piece= "NEANT";
+        }
         $users->devise = $request->devise;
         $users->typeAccounte = $request->typeAccounte;
         $users->save();

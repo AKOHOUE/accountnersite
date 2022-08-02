@@ -41,7 +41,42 @@ use App\Http\Controllers\FrontendController;
  Route::get('monCompte', 'App\Http\Controllers\FrontUsersController@monCompte')->name('front.monCompte');
 
 
- 
- 
+ Route::get('login', 'App\Http\Controllers\FrontendController@login')->name('front.login');
 
 
+ Route::get('registrationAdmin', 'App\Http\Controllers\CustomAuthController@registrationAdmin')->name('back.registrationAdmin');
+ Route::get('adminConnexion', 'App\Http\Controllers\CustomAuthController@adminConnexion')->name('back.adminConnexion');
+ Route::post('adminRegistration', 'App\Http\Controllers\CustomAuthController@adminRegistration')->name('back.adminRegistration');
+ Route::post('adminLogin', 'App\Http\Controllers\CustomAuthController@adminLogin')->name('back.adminLogin');
+ Route::get('adminlogout', 'App\Http\Controllers\CustomAuthController@adminlogout')->name('back.adminlogout');
+
+
+ Route::get('dashboard', 'App\Http\Controllers\CustomAuthController@dashboard')->name('back.dashboard');
+ Route::get('clients', 'App\Http\Controllers\CustomAuthController@clients')->name('back.clients');
+ Route::get('clientsActifs', 'App\Http\Controllers\CustomAuthController@clientsActifs')->name('back.clientsActifs');
+ Route::get('clientsInactifs', 'App\Http\Controllers\CustomAuthController@clientsInactifs')->name('back.clientsInactifs');
+ Route::get('depotsClients', 'App\Http\Controllers\CustomAuthController@depotsClients')->name('back.depotsClients');
+ Route::get('virementsClients', 'App\Http\Controllers\CustomAuthController@virementsClients')->name('back.virementsClients');
+ Route::get('operationsClients', 'App\Http\Controllers\CustomAuthController@operationsClients')->name('back.operationsClients');
+ Route::get('profileAdmin', 'App\Http\Controllers\CustomAuthController@profileAdmin')->name('back.profileAdmin');
+ Route::get('contacts', 'App\Http\Controllers\CustomAuthController@contacts')->name('back.contacts');
+
+
+ Route::get('{id}/editClient', 'App\Http\Controllers\CustomAuthController@editClient')->name('back.editClient');
+ Route::get('{id}/detailClient', 'App\Http\Controllers\CustomAuthController@detailClient')->name('back.detailClient');
+ Route::post('{id}/modificationClient', 'App\Http\Controllers\CustomAuthController@modificationClient')->name('back.modificationClient');
+ Route::get('{id}/deleteClient', 'App\Http\Controllers\CustomAuthController@deleteClient')->name('back.deleteClient');
+
+
+ Route::get('{id}/activerVClient', 'App\Http\Controllers\CustomAuthController@activerVClient')->name('back.activerVClient');
+ Route::post('{id}/activerClient', 'App\Http\Controllers\CustomAuthController@activerClient')->name('back.activerClient');
+ 
+ Route::get('{id}/depotsClient', 'App\Http\Controllers\CustomAuthController@depotsClient')->name('back.depotsClient');
+ Route::post('{id}/depotClient', 'App\Http\Controllers\CustomAuthController@depotClient')->name('back.depotClient');
+
+ Route::get('{id}/desactiverVClient', 'App\Http\Controllers\CustomAuthController@desactiverVClient')->name('back.desactiverVClient');
+ Route::post('{id}/desactiverClient', 'App\Http\Controllers\CustomAuthController@desactiverClient')->name('back.desactiverClient');
+ 
+ Route::get('{id}/passwordVueClient', 'App\Http\Controllers\CustomAuthController@passwordVueClient')->name('back.passwordVueClient');
+ Route::post('{id}/passwordClient', 'App\Http\Controllers\CustomAuthController@passwordClient')->name('back.passwordClient');
+ 
