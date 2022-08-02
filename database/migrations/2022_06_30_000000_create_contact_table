@@ -1,0 +1,46 @@
+<?php
+ 
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateContactTable extends Migration
+{
+    /**
+     * Schema table name to migrate
+     * @var string
+     */
+    public $tableName = 'contact';
+
+    /**
+     * Run the migrations.
+     * @table blog
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create($this->tableName, function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->increments('id');
+            $table->string('name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('object')->nullable();
+            $table->timestamps();
+
+            $table->string('message')->nullable();
+           
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists($this->tableName);
+    }
+}
