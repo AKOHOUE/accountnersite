@@ -332,7 +332,7 @@ class OpsController extends Controller
 
         }
  
-        return view('frontend.virementCode1',compact('operation'));
+        return view('frontend.virementCode1',compact('operation'))->withErrors(['error' => '']);;
     }
 
     public function virementCode2(Request $request)
@@ -369,7 +369,7 @@ class OpsController extends Controller
 
         }
  
-        return view('frontend.virementCode2',compact('operation'));
+        return view('frontend.virementCode2',compact('operation'))->withErrors(['error' => 'Code incorrect']);;
     }
 
     public function virementCode3(Request $request)
