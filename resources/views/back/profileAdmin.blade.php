@@ -16,12 +16,12 @@
 
             <div class="card">
                 <div class="card-body">
-                <h5 class="card-title">Changer Mot de Passe  de compte Client </h5>
+                <h5 class="card-title">Changer Mot de Passe  de mon compte </h5>
 
                	<form method="post" action="{{ route('back.me') }}">
 						@csrf
                 <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Username </label>
+                  <label for="inputText" class="col-sm-2 col-form-label">Saisissez un nom d'Utilisateur </label>
                   <div class="col-sm-10">
                    <input type="text" class="form-control" name="username" value="{{ ucfirst(auth()->user()->username) }}">
                   </div>

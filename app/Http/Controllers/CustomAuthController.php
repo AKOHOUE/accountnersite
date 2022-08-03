@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Hash;
 use Session;
 use App\Models\User;
+use App\Models\Contact;
+use App\Models\Operation;
 use Illuminate\Support\Facades\Auth;
 
 class CustomAuthController extends Controller
@@ -76,11 +78,16 @@ class CustomAuthController extends Controller
     }    
     
 
-    public function list()
+    public function listContacts()
     {
-        $clients = User::all()->where('isAdmin', 0);
 
-        return view('back.customers.list', compact('clients'));
+        if(Auth::check()){
+            $contacts = Contact::all();
+
+            return view('back.contacts', compact('contacts'));
+        }
+  
+        return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder.");
     }
     public function dashboard()
     {
@@ -120,34 +127,7 @@ class CustomAuthController extends Controller
   
         return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder.");
     }
-    public function depotsClients()
-    {
-        if(Auth::check()){
-            $depotsClients = User::all()->where('isAdmin', 0)->where('isActif', 1);
-            return view('back.depotsClients', compact('depotsClients'));
-        }
-  
-        return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder.");
-    }
-    public function virementsClients()
-    {
-        if(Auth::check()){
-            $depotsClients = User::all()->where('isAdmin', 0)->where('isActif', 1);
-            return view('back.virementsClients', compact('depotsClients'));
-        }
-  
-        return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder.");
-    }
 
-    public function operationsClients()
-    {
-        if(Auth::check()){
-            $depotsClients = User::all()->where('isAdmin', 0)->where('isActif', 1);
-            return view('back.listOperations', compact('depotsClients'));
-        }
-  
-        return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder.");
-    }
     public function profileAdmin()
     {
         if(Auth::check()){
@@ -159,7 +139,7 @@ class CustomAuthController extends Controller
     public function contacts()
     {
         if(Auth::check()){
-            $depotsClients = User::all()->where('isAdmin', 0)->where('isActif', 1);
+            $contacts = Contact::latest();
             return view('back.contacts');
         }
   
@@ -304,8 +284,7 @@ class CustomAuthController extends Controller
     public function desactiverClient($id)
     {
        $user = User::findOrFail($id);
-       $users = new User;
-     
+      
 
     	$user->username = request('username');
         $user->isActif = "0";
@@ -330,6 +309,7 @@ class CustomAuthController extends Controller
             }
       
     }
+     
     public function deleteClient($id)
     {
     	$user = User::findOrFail($id);
@@ -338,6 +318,95 @@ class CustomAuthController extends Controller
     	return redirect()->route('back.clients');
     }
 
+    public function depotsClients()
+    {
+        if(Auth::check()){
+            $opsClient = Operation::all()->where('typeOperation',"DEPOT");
+            return view('back.depoVirement', compact('opsClient'));
+        }
+  
+        return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder.");
+    }
+    public function virementsClients()
+    {
+        if(Auth::check()){
+            $opsClient = Operation::all()->where('typeOperation',"TRANSFERT");
+            return view('back.virementsClients', compact('opsClient'));
+        }
+  
+        return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder.");
+    }
+
+    public function operationsClients()
+    {
+        if(Auth::check()){
+ 
+            $opsClient = Operation::latest()->paginate(5);
+    
+            return view('back.listOperations', compact('opsClient'))
+                ->with('i', (request()->input('page', 1) - 1) * 5);
+
+        }
+  
+        return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder.");
+    }
+
+
+    
+    public function deleteOps($id)
+    {
+ 
+        if(auth()->guest()){
+            return redirect()->route('adminConnexion');
+        }
+    	$opsClient = Operation::findOrFail($id);
+    	$opsClient->delete();
+
+    	return redirect()->route('back.suiviOps');
+    }
+
+    public function suiviOps()
+    {
+        if(Auth::check()){
+            $opsClient = Operation::latest()->get();
+            return view('back.listOperations', compact('opsClient'));
+        }
+  
+        return redirect("adminConnexion")->with("Vous n'êtes pas autorisé à accéder.");
+    }
+    public function opt($id)
+    {
+        $ops = Operation::findOrFail($id);
+
+        if(auth()->guest()){
+            return redirect("adminConnexion")->with("Vous n'êtes pas autorisé à accéder.");
+        }
    
+        return view('back.modificationOps', compact('ops'));
+    }
+    
+    public function opsUpdate($id)
+    {
+        if(auth()->guest()){
+            return redirect("adminConnexion")->with("Vous n'êtes pas autorisé à accéder.");
+        }
+        $opsClient = Operation::findOrFail($id);
+        
+       $opsClient->montant = request('montant');
+       $opsClient->montantVire = request('montantVire');
+       $opsClient->montantDepot = request('montantDepot');
+       $opsClient->raison = request('raison');
+
+       $opsClient->receveur = request('receveur');
+       $opsClient->support = request('support');
+
+       $opsClient->temoinsMail1 = request('temoinsMail1');
+       $opsClient->temoinsPhone1 = request('temoinsPhone1');
+       $opsClient->percentage = request('percentage');
+ 
+    	$opsClient->save();
+
+    	return redirect()->route('back.suiviOps');
+    }
 
 }

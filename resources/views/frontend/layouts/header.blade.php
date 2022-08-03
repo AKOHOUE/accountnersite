@@ -42,14 +42,14 @@
           <li   style="margin-left:50px"  class="dropdown"><a href="#"><span>Langues</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul >
               <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(en)';location.reload();"><img src="{{ asset('assets/lang/en.png') }}">Anglais</a></li>
+              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(fr)';location.reload();"><img src="{{ asset('assets/lang/fr.png') }}">Français</a></li>
               <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(de)';location.reload();"><img src="{{ asset('assets/lang/de.png') }}">Allemend </a></li>
               <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(es)';location.reload();"><img src="{{ asset('assets/lang/es.png') }}">Espagnol </a></li>
-              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(fr)';location.reload();"><img src="{{ asset('assets/lang/fr.png') }}">Français</a></li>
-              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(nl)';location.reload();"><img src="{{ asset('assets/lang/nl.png') }}">NL</a></li>
-              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(lv)';location.reload();"><img src="{{ asset('assets/lang/lv.png') }}">Lv</a></li>
-              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(sk)';location.reload();"><img src="{{ asset('assets/lang/sk.png') }}">SK</a></li>
-              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(sl)';location.reload();"><img src="{{ asset('assets/lang/sl.png') }}">Slovaquie</a></li>
-              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(mt)';location.reload();"><img src="{{ asset('assets/lang/mt.png') }}">MT </a></li>
+              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(nl)';location.reload();"><img src="{{ asset('assets/lang/nl.png') }}">Néerlandais</a></li>
+              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(lv)';location.reload();"><img src="{{ asset('assets/lang/lv.png') }}">Letton</a></li>
+              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(sk)';location.reload();"><img src="{{ asset('assets/lang/sk.png') }}">Slovaque</a></li>
+              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(sl)';location.reload();"><img src="{{ asset('assets/lang/sl.png') }}">Slovène</a></li>
+              <li><a href="javascript:void()"  onclick="window.location.hash='#googtrans(mt)';location.reload();"><img src="{{ asset('assets/lang/mt.png') }}">Maltais </a></li>
               <!-- Code provided by Google -->
             </ul>
           </li>

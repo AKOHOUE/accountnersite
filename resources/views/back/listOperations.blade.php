@@ -1,5 +1,5 @@
 @section('title')
-  Opérations
+  Comptes opss
   
 @endsection
 
@@ -16,36 +16,67 @@
 
             <div class="card">
                 <div class="card-body">
-                <h5 class="card-title">Opérations(Dépots,Virements)</h5>
-                <p>Liste complète des opérations par ordre décroissante.</p>
+                <h5 class="card-title">Toutes les Opérations</h5>
+                <p>Liste complète des opérations sur comptes opss.</p>
 
-                <!-- Table with stripped rows -->
+                    <!-- Table with stripped rows -->
                 <table class="table datatable">
                     <thead>
                     <tr>
-                        <th scope="col">Client</th>
-                        <th scope="col">Bénéficiaire</th>
-                        <th scope="col">Email Client</th>
-
-                        <th scope="col">Montant</th>
                         <th scope="col">Type Opérations</th>
+                        <th scope="col">Support</th>
+                        <th scope="col">Montant</th>
+                        <th scope="col">Montant de Virement</th>
+                        <th scope="col">Montant de Dépôt</th>
+                        <th scope="col">Raison</th>
 
-                        <th scope="col">Date </th>
-
+                        <th scope="col">Statut</th>
+                        <th scope="col">Bénéficiaire</th>
+                        <th scope="col">Code 1</th>
+                        <th scope="col">Code 2</th>
+                        <th scope="col">Code 3</th>
+                        <th scope="col">Témoin</th>
+                        <th scope="col">Mail Témoin</th>
+                        <th scope="col">Phone Témoin</th>
+                        <th scope="col">Percentage</th>
+                        <th scope="col">Date de Demande</th>
                         <th scope="col">Actions</th>
-                    </tr>
+                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>Brandon Jacob</td>
-                        <td>Designer</td>
-                        <td>28</td>
-                        <td>2016-05-25</td>
-                        <td>Brandon Jacob</td>
-                        <td>Designer</td>
-                   
-                        <td>Détail    EDITER  SUPRIMMER</td>
-                    </tr>
+                    @foreach ($opsClient as $ops)
+                     <tr>
+                        <td> {{ $ops->typeOperation}}</td>
+                        <td> {{ $ops->support}}</td>
+                        <td>  {{ $ops->montant}}</td>
+                        <td>  {{ $ops->montantVire}}</td>
+                        <td>  {{ $ops->montantDepot}}</td>
+                        <td>  {{ $ops->raison}}</td>
+                        <td>  {{ $ops->pending}}</td>
+
+                        <td> {{ $ops->receveu}}</td>
+                        <td> {{ $ops->code1}}</td>
+                        <td>  {{ $ops->code2}}</td>
+                        <td>  {{ $ops->code3}}</td>
+                        <td>  {{ $ops->temois}}</td>
+                         <td>  {{ $ops->temoinsMail1}}</td>
+                        <td>  {{ $ops->temoinsPhone1}}</td>
+                        <td>  {{ $ops->percentage}}</td>
+                        <td>  {{ $ops->created_at}}</td>
+                     
+                        <td>
+                           
+                           <a href="{{ route('back.opt', $ops->id) }}" class="btn btn-sm bg-success-light mr-2">
+                               <i class="fe fe-pencil"></i> Modifier
+                            </a>
+                           <a href="{{ route('back.deleteOps', $ops->id) }}" class="btn btn-sm bg-danger-light">
+                                <i class="fe fe-trash"></i> Supprimer
+                            </a>
+                         </td>
+
+                      </tr>
+                      @endforeach
+               
                     </tbody>
                 </table>
                 <!-- End Table with stripped rows -->

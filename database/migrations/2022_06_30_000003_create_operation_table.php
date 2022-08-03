@@ -25,9 +25,9 @@ class CreateOperationTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('typeOperation')->nullable();
-            $table->string('montant')->nullable();
-            $table->string('montantVire')->nullable();
-            $table->string('montantDepot')->nullable();
+            $table->double('montant')->nullable();
+            $table->double('montantVire')->nullable();
+            $table->double('montantDepot')->nullable();
             $table->string('raison')->nullable();
             $table->string('receveur')->nullable();
             $table->string('support')->nullable();

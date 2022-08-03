@@ -67,20 +67,34 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+            <form method="post" action="{{ route('contactsUi.store') }}"  role="form" class="php-email-form">
+						@csrf
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nom et prénom(s)" required>
+                     @if($errors->has('name'))
+                         <div class="alert alert-danger" role="alert">{{ $errors->first('name') }}</div>
+                        @endif
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder=" Email" required>
+                     @if($errors->has('email'))
+                         <div class="alert alert-danger" role="alert">{{ $errors->first('email') }}</div>
+                        @endif
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
+                <input type="text" class="form-control" name="object" id="subject" placeholder="Objet" required>
+                   @if($errors->has('object'))
+                         <div class="alert alert-danger" role="alert">{{ $errors->first('object') }}</div>
+                        @endif
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                   @if($errors->has('message'))
+                         <div class="alert alert-danger" role="alert">{{ $errors->first('message') }}</div>
+                        @endif
               </div>
               <div class="my-3">
                 <div class="loading">Chargement</div>

@@ -38,11 +38,11 @@
           <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/quote-bg.jpg);"></div>
 
           <div class="col-lg-7">
-            		<form id="SignupForm" action="{{ route('front.customRegistration') }}" method="post" enctype="multipart/form-data" class="php-email-form">
+            		<form id="SignupForm" action="{{ route('front.demandeOpsDepot') }}" method="post" enctype="multipart/form-data" class="php-email-form">
 			        	@csrf
 						    	@if($errors->all())
-	                                <strong style="color: red; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px">Le code entré est incorrecte</strong>
-	                            @endif
+	                <strong style="color: red; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px"> Informations incorrectes</strong>
+	                @endif
                   @if(Session::has('success'))
                   <strong style="color: ##02b320; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px"> Votre compte est activé</strong>
                   @endif
@@ -88,8 +88,8 @@
                     @endif
                 </div>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="temoinsMail1" value="{{ old('temoinsMail1') }}" rows="6" placeholder="Confirmez votre e-mail" required></textarea>
+               <div class="col-md-12">
+                  <input class="form-control" name="temoinsMail1" value="{{ old('temoinsMail1') }}" type="email" placeholder="Mail du Bénéficiaire" required>
                     @if($errors->has('temoinsMail1'))
                         <div class="alert alert-danger" role="alert">{{ $errors->first('temoinsMail1') }}</div>
                     @endif

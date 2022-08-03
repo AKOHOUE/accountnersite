@@ -13,7 +13,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Continuer  l'opération</h2>
+              <h2>Opération sur votre Compte</h2>
            
             </div>
           </div>
@@ -41,7 +41,7 @@
             	Contactez votre gestionnaire de compte en cas de problèmes . <br> <br> <br>
                  Opération en cours ...
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 200px;" aria-valuenow="40" aria-valuemin="25%" aria-valuemax="100">50%</div>
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 200px;" aria-valuenow="40" aria-valuemin="25%" aria-valuemax="100">{{$operation->percentage}}%</div>
                                 </div>
           </div><!-- End Quote Form -->
 

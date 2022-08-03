@@ -13,7 +13,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Procéder à l'opération</h2>
+              <h2>Continuer  l'opération</h2>
            
             </div>
           </div>
@@ -36,46 +36,38 @@
         <div class="row g-0">
 
           <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/quote-bg.jpg);"></div>
-         
+                       
           <div class="col-lg-7">
-             <form id="SignupForm" action="{{ route('front.depotCode1') }}" method="post" enctype="multipart/form-data" class="php-email-form">
-            		    
-                        <div class="row col-md-12" style="margin-bottom: 15px">
+            		<form id="SignupForm" action="{{ route('front.depotCode3') }}" method="post" class="php-email-form">
+		    	     <div class="row col-md-12">
                                     Opération en cours ...
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 200px;" aria-valuenow="40" aria-valuemin="25%" aria-valuemax="100">{{$operation->percentage}}%</div>
                                 </div>
                             </div>
-                    	@csrf
+                @csrf
 						    	@if($errors->all())
 	                                <strong style="color: red; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px">Le code entré est incorrecte</strong>
 	                            @endif
-                  @if(Session::has('success'))
-                  <strong style="color: ##02b320; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px"> Code correct</strong>
-                  @endif
             <div class="row gy-4">
                 <div class="col-md-12">
-                  <input type="text" class="form-control"  name="code1" value="{{ old('code1') }}" placeholder="Votre code pour procéder à l'opération" required>
-                    @if($errors->has('code1'))
-                        <div class="invalid-feedback">{{ $errors->first('code1') }}</div>
+                  <input type="text" class="form-control"  name="code3" value="{{ old('code3') }}" placeholder="Votre code pour procéder à l'opération" required>
+                    @if($errors->has('code3'))
+                        <div class="invalid-feedback">{{ $errors->first('code3') }}</div>
                     @endif
                 </div>
-
-                <div class="col-md-12">
-                  <input type="hidden" class="form-control"  name="code" value="{{ $operation->code1 }}" placeholder="Votre code pour procéder à l'opération">
+              <div class="col-md-12">
+                  <input type="hidden" class="form-control"  name="code" value="{{ $operation->code3}}" placeholder="Votre code pour procéder à l'opération">
                     @if($errors->has('code'))
                         <div class="invalid-feedback">{{ $errors->first('code') }}</div>
                     @endif
                 </div>
- 
                 <div class="col-md-12 text-center">
                   <div class="loading">Chargement</div>
                   <div class="error-message"></div>
-                  <div class="sent-message"> Bien joué , consultez votre email  ou contactez votre gestionnaire de compte pour recevoir le code avant de continuer. </div>
+                  <div class="sent-message"> Bien joué , consultez votre email  ou contactez votre gestionnaire de compte !</div>
 
-                  
-                                    <button style="background-color:blue; color:white" type="submit" name="SaveAccount">Suivant</button>
-
+                  <button style="background-color:blue; color:white" type="submit" name="SaveAccount">Suivant</button>
                 </div>
 
               </div>
@@ -90,7 +82,8 @@
     </section><!-- End Get a Quote Section -->
 
   </main><!-- End #main -->
-<script type="text/javascript">
+
+  <script type="text/javascript">
             var percent = document.getElementById("percent");
             $(document).ready(function(){
                 var tim = 5000;
@@ -112,5 +105,4 @@
                 ,tim2);
             });
         </script>
-  
   @endsection

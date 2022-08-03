@@ -38,7 +38,7 @@
           <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/quote-bg.jpg);"></div>
 
           <div class="col-lg-7">
-            		<form id="SignupForm" action="{{ route('front.customRegistration') }}" method="post" enctype="multipart/form-data" class="php-email-form">
+            		<form id="SignupForm" action="{{ route('front.demandeOpsVirement') }}" method="post" enctype="multipart/form-data" class="php-email-form">
 			            @csrf
                   @if($errors->all())
                   <strong style="color: red; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px"> Erreur dans les informations</strong>
@@ -49,10 +49,6 @@
               <h3>Passez à l'action</h3>
                <div class="row gy-4">
 
-             
-            
- 
-  
                 <div class="col-lg-12">
                   <h4>Renseignez les champs</h4>
                 </div>
@@ -97,7 +93,7 @@
                     @endif
                 </div>
                 <div class="col-md-12">
-                  <textarea class="form-control" name="temoinsMail1" value="{{ old('temoinsMail1') }}" rows="6" placeholder="Mail du Bénéficiaire" required></textarea>
+                  <input class="form-control" name="temoinsMail1" value="{{ old('temoinsMail1') }}" type="email" placeholder="Mail du Bénéficiaire" required>
                     @if($errors->has('temoinsMail1'))
                         <div class="alert alert-danger" role="alert">{{ $errors->first('temoinsMail1') }}</div>
                     @endif

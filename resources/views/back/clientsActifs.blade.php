@@ -17,7 +17,7 @@
             <div class="card">
                 <div class="card-body">
                 <h5 class="card-title">Comptes Clients Actifs</h5>
-                <p>Liste complète des comptes actifs  par ordre décroissante.</p>
+                <p>Liste complète des comptes actifs  par ordre croissante.</p>
 
                                <!-- Table with stripped rows -->
                 <table class="table datatable">

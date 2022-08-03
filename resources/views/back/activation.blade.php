@@ -20,6 +20,8 @@
 
                	<form method="post" action="{{ route('back.activerClient', $user->id) }}">
 						@csrf
+
+            
                 <div class="row mb-3">
                   <label for="inputText" class="col-sm-2 col-form-label">Nom d'Utlisateur</label>
                   <div class="col-sm-10">

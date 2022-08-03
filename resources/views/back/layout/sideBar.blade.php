@@ -41,7 +41,7 @@
             </a>
           </li>
           <li>
-            <a href="{{ route('back.operationsClients') }}">
+            <a href="{{ route('back.suiviOps') }}">
               <i class="bi bi-circle"></i><span>Suivi opérations</span>
             </a>
           </li>
@@ -63,7 +63,7 @@
  
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ route('back.contacts') }}">
+        <a class="nav-link collapsed" href="{{ route('contactsUi.index') }}">
           <i class="bi bi-envelope"></i>
           <span>Contact</span>
         </a>

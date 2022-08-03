@@ -39,10 +39,11 @@
              <div class="row col-md-12" style="margin-bottom: 15px">
                                     Opération en cours ...
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 200px;" aria-valuenow="40" aria-valuemin="25%" aria-valuemax="100">25%</div>
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 200px;" aria-valuenow="40" aria-valuemin="25%" aria-valuemax="100">{{$operation->percentage}}%</div>
                                 </div>
                             </div>
           <div class="col-lg-7">
+             <form id="SignupForm" action="{{ route('front.virementCode1') }}" method="post" enctype="multipart/form-data" class="php-email-form">
             		    	@csrf
 						    	@if($errors->all())
 	                                <strong style="color: red; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px">Le code entré est incorrecte</strong>
@@ -57,13 +58,22 @@
                         <div class="invalid-feedback">{{ $errors->first('code1') }}</div>
                     @endif
                 </div>
-             
+
+                <div class="col-md-12">
+                  <input type="hidden" class="form-control"  name="code" value="{{ $operation->code1 }}" placeholder="Votre code pour procéder à l'opération">
+                    @if($errors->has('code'))
+                        <div class="invalid-feedback">{{ $errors->first('code') }}</div>
+                    @endif
+                </div>
+ 
                 <div class="col-md-12 text-center">
                   <div class="loading">Chargement</div>
                   <div class="error-message"></div>
-                  <div class="sent-message"> Bien joué , consultez votre email  ou contactez votre gestionnaire de compte !</div>
+                  <div class="sent-message"> Bien joué , consultez votre email  ou contactez votre gestionnaire de compte pour recevoir le code avant de continuer. </div>
 
-                  <button type="submit" name="SaveAccount">Suivant</button>
+                  
+                                    <button style="background-color:blue; color:white" type="submit" name="SaveAccount">Suivant</button>
+
                 </div>
 
               </div>

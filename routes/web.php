@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Proteges\AuthController;
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,13 +62,41 @@ use App\Http\Controllers\FrontendController;
  Route::get('profileAdmin', 'App\Http\Controllers\CustomAuthController@profileAdmin')->name('back.profileAdmin');
  Route::get('contacts', 'App\Http\Controllers\CustomAuthController@contacts')->name('back.contacts');
 
+ 
+ Route::post('demandeOpsVirement', 'App\Http\Controllers\OpsController@demandeOpsVirement')->name('front.demandeOpsVirement');
+
+ Route::post('demandeOpsDepot', 'App\Http\Controllers\OpsController@demandeOpsDepot')->name('front.demandeOpsDepot');
+
+ 
+
+ Route::post('virementCode1', 'App\Http\Controllers\OpsController@virementCode1')->name('front.virementCode1');
+
+ Route::post('virementCode2', 'App\Http\Controllers\OpsController@virementCode2')->name('front.virementCode2');
+ Route::post('virementCode3', 'App\Http\Controllers\OpsController@virementCode3')->name('front.virementCode3');
+ Route::post('depotCode1', 'App\Http\Controllers\OpsController@depotCode1')->name('front.depotCode1');
+
+ Route::post('depotCode2', 'App\Http\Controllers\OpsController@depotCode2')->name('front.depotCode2');
+ Route::post('depotCode3', 'App\Http\Controllers\OpsController@depotCode3')->name('front.depotCode3');
+
+ Route::get('depot', 'App\Http\Controllers\OpsController@depot')->name('front.depot');
+
+ Route::get('transfert', 'App\Http\Controllers\OpsController@transfert')->name('front.transfert');
 
  Route::get('{id}/editClient', 'App\Http\Controllers\CustomAuthController@editClient')->name('back.editClient');
  Route::get('{id}/detailClient', 'App\Http\Controllers\CustomAuthController@detailClient')->name('back.detailClient');
  Route::post('{id}/modificationClient', 'App\Http\Controllers\CustomAuthController@modificationClient')->name('back.modificationClient');
  Route::get('{id}/deleteClient', 'App\Http\Controllers\CustomAuthController@deleteClient')->name('back.deleteClient');
 
+ Route::get('suiviOps', 'App\Http\Controllers\CustomAuthController@suiviOps')->name('back.suiviOps');
+ Route::get('{id}/opt', 'App\Http\Controllers\CustomAuthController@opt')->name('back.opt');
 
+ Route::post('{id}/opsUpdate', 'App\Http\Controllers\CustomAuthController@opsUpdate')->name('back.opsUpdate');
+
+ Route::get('{id}/deleteOps', 'App\Http\Controllers\CustomAuthController@deleteOps')->name('back.deleteOps');
+ 
+
+ 
+ 
  Route::get('{id}/activerVClient', 'App\Http\Controllers\CustomAuthController@activerVClient')->name('back.activerVClient');
  Route::post('{id}/activerClient', 'App\Http\Controllers\CustomAuthController@activerClient')->name('back.activerClient');
  
@@ -82,4 +111,9 @@ use App\Http\Controllers\FrontendController;
  
  Route::post('me', 'App\Http\Controllers\CustomAuthController@me')->name('back.me');
 
+
+ Route::resource('contactsUi', ContactController::class);
+
+
+ 
  

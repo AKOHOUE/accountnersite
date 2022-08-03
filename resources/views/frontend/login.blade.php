@@ -70,8 +70,7 @@
                 </div>
 
  <p>Vous n'avez  encore  un compte? <a href="{{ route('front.compte') }}">Ouvrir un compte</a></p>
-                       <p>Mot de passe oublié ? <a href="{{ route('front.reset') }}">Récupérer mon compte</a></p>
-              </div>
+               </div>
                      
             </form>
        

@@ -47,6 +47,11 @@ class User extends Authenticatable
      */
     protected $table = 'users';
  
+    public function virements()
+    {
+         return $this->hasMany(Operation::class, 'users_id');
+
+    }
 
 public function setDateAttribute( $value ) {
     $this->attributes['date'] = (new Carbon($value))->format('d/m/y');
