@@ -51,7 +51,7 @@
                                 <p>Pays: {{auth()->user()->country}}</p>
                                 <p>Téléphone: {{auth()->user()->phone}}</p>
                                 <p>Type de Compte : {{auth()->user()->typeAccounte}}</p>
-                                <p>Nom de la banque: RFGB</p>
+                                <p>Nom de la banque: SGROUPFI(Social Group Finance)</p>
                                 <p>IBAN: {{auth()->user()->bic ? auth()->user()->bic : ''}}</p>
                                 <p>SWIFT: {{auth()->user()->swift ? auth()->user()->swift : ''}}</p>
                                 <p>Votre solde actuel est de: {{auth()->user()->solde}} {{auth()->user()->devise}} </p>

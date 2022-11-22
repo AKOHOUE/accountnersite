@@ -33,7 +33,7 @@
             New York, NY 535022<br>
             United States <br><br>
             <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> RFGB contact@rfgb.com<br>
+            <strong>Email:</strong> SGROUPFI(Social Group Finance) contact@sgroupfi.com<br>
           </p>
 
         </div>
@@ -43,7 +43,7 @@
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>RFGB</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>SGROUPFI(Social Group Finance)</span></strong>. All Rights Reserved
       </div>
       
     </div>

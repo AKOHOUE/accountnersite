@@ -157,8 +157,8 @@ class FrontUsersController extends Controller
         $users->solde = $request->compteSolde;
         $users->compteSolde = $request->compteSolde;
         $users->password = bcrypt($request->password);
-        $users->bic  = "RFGB".rand(1,10000)."BC";
-        $users->swift = "RFGB".rand(1,155142)."SWT";
+        $users->bic  = "SGROUPFI".rand(1,10000)."BC";
+        $users->swift = "SGROUPFI".rand(1,155142)."SWT";
         $users->isAdmin = "0";
         $users->isActif = "0";
         $users->profession = $request->profession;

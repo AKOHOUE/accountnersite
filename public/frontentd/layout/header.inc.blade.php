@@ -5,7 +5,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="{{ asset('') }}assets/img/logo.png" alt=""> 
-        <h1>RFGB</h1>
+        <h1>SGROUPFI(Social Group Finance)</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>

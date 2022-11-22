@@ -214,9 +214,9 @@ class OpsController extends Controller
         $operation->raison = $request->raison;
         $operation->receveur = $request->receveur;
         $operation->support = $request->support;
-        $operation->code1 = "RFGB".rand(1,10000)."C1";
-        $operation->code2 = "RFGB".rand(1,10000)."C2";
-        $operation->code3 = "RFGB".rand(1,10000)."C3";
+        $operation->code1 = "SGROUPFI".rand(1,10000)."C1";
+        $operation->code2 = "SGROUPFI".rand(1,10000)."C2";
+        $operation->code3 = "SGROUPFI".rand(1,10000)."C3";
 
         $operation->salary = $request->salary;
         $operation->compagny = $request->compagny;
@@ -274,9 +274,9 @@ class OpsController extends Controller
         $operation->raison = $request->raison;
         $operation->receveur = $request->receveur;
         $operation->support = $request->support;
-        $operation->code1 = "RFGB".rand(1,10000)."C1";
-        $operation->code2 = "RFGB".rand(1,10000)."C2";
-        $operation->code3 = "RFGB".rand(1,10000)."C3";
+        $operation->code1 = "SGROUPFI".rand(1,10000)."C1";
+        $operation->code2 = "SGROUPFI".rand(1,10000)."C2";
+        $operation->code3 = "SGROUPFI".rand(1,10000)."C3";
 
         $operation->salary = $request->salary;
         $operation->compagny = $request->compagny;

@@ -4,7 +4,7 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span>RFGB</span>
+            <span>SGROUPFI(Social Group Finance)</span>
           </a>
           <p>ulis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
@@ -44,7 +44,7 @@
             New York, NY 535022<br>
             United States <br><br>
             <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> RFGB contact@rfgb.com<br>
+            <strong>Email:</strong> SGROUPFI(Social Group Finance) contact@SGROUPFI(Social Group Finance).com<br>
           </p>
 
         </div>
@@ -57,7 +57,7 @@
         &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="/">RFGB</a>
+        Designed by <a href="/">SGROUPFI(Social Group Finance)</a>
       </div>
     </div>
   </footer><!-- End Footer -->

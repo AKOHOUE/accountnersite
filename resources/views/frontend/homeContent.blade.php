@@ -12,7 +12,7 @@
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h2 data-aos="fade-up"> </h2>
-          <p data-aos="fade-up" style=" font-family: Times New Roman, Times, serif; size:16px" data-aos-delay="100" style="color: ">Comptez sur des récompenses, des économies, des perspectives et bien plus encore avec tout compte admissible. Seulement à RFGB.</p>
+          <p data-aos="fade-up" style=" font-family: Times New Roman, Times, serif; size:16px" data-aos-delay="100" style="color: ">Comptez sur des récompenses, des économies, des perspectives et bien plus encore avec tout compte admissible. Seulement à SGROUPFI(Social Group Finance).</p>
         </h3>
         <p><strong style=" font-family: Times New Roman, Times, serif; size: 16px">Prix de L’innovation de la banque de Détail au Moyen-Orient et en Asie. Maintenir la stabilité des prix
 <br>
@@ -117,7 +117,7 @@
                  <div>
                   <h5>LA FORCE D’UN GROUPE DE RÉFÉRENCE</h5>
                   <p>
-Né il y a plus de 75 ans au Mali,  RFGB compte aujourd’hui près de 6 000 collaborateurs.
+Né il y a plus de 75 ans au Mali,  SGROUPFI(Social Group Finance) compte aujourd’hui près de 6 000 collaborateurs.
 Les performances sont au rendez-vous puisque le Groupe présente au 31 décembre 2021 un total de bilan consolidé de 9,4 milliards d’euros et enregistre à cette date un bénéfice net consolidé de 164,5 millions d’euros.</p>
                Découvrez comment la monnaie unique et la création d’une supervision bancaire commune ont rapproché les pays européens.
                 </div>
@@ -347,7 +347,7 @@ Il en résulte un système de sécurisation complet et complexe.
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-Je suis fière de me faire accompagner par RFGB dans la réalisations de mes projets professionnels.              
+Je suis fière de me faire accompagner par SGROUPFI(Social Group Finance) dans la réalisations de mes projets professionnels.              
      <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -362,7 +362,7 @@ Je suis fière de me faire accompagner par RFGB dans la réalisations de mes pro
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-Le groupe le plus scial que RFGB je n'ai pas encore vu dans dans le monde.                  
+Le groupe le plus scial que SGROUPFI(Social Group Finance) je n'ai pas encore vu dans dans le monde.                  
 <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -472,14 +472,14 @@ Une personne travaillant pour un Contrôleur ou un Sous-traitant ayant une conna
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
                     <i class="bi bi-question-circle question-icon"></i>
-Comment RFGB s'assure-t-elle que les informations de l'utilisateur sont protégées après leur partage avec les vors ?                  </button>
+Comment SGROUPFI(Social Group Finance) s'assure-t-elle que les informations de l'utilisateur sont protégées après leur partage avec les vors ?                  </button>
                 </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
                     <i class="bi bi-question-circle question-icon"></i>
 peut partager les informations de l'utilisateur avec des processeurs tiers (tels que des prestataires de services ou des VOR). Les contrats avec des sous-traitants tiers nécessitent des mesures de sécurité techniques et organisationnelles suffisantes, limitent l'utilisation des informations de l'utilisateur aux fins définies par les affiliés et conservent le contrôle des informations de l'utilisateur, le cas échéant.
 
-En outre, RFGB ne transférera les informations utilisateur des utilisateurs situés dans l'UE qu'à des processeurs tiers qui offrent un niveau de protection adéquat lors du traitement des informations utilisateur (par exemple en concluant des contrats basés sur les clauses types pour le transfert des informations utilisateur de l'UE aux processeurs établis dans des pays tiers publiés par la Commission européenne). Les accords avec des sous-traitants tiers prévoient des recours juridiques en cas de violation de l'accord.                  </div>
+En outre, SGROUPFI(Social Group Finance) ne transférera les informations utilisateur des utilisateurs situés dans l'UE qu'à des processeurs tiers qui offrent un niveau de protection adéquat lors du traitement des informations utilisateur (par exemple en concluant des contrats basés sur les clauses types pour le transfert des informations utilisateur de l'UE aux processeurs établis dans des pays tiers publiés par la Commission européenne). Les accords avec des sous-traitants tiers prévoient des recours juridiques en cas de violation de l'accord.                  </div>
                 </div>
               </div><!-- # Faq item-->
 
@@ -491,7 +491,7 @@ Comment fermer mon compte ?                  </button>
                 </h3>
                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-Pour fermer votre compte avec RFGB, visitez l'une de nos succursales ou rendez-vous sur le site Web du produit et soumettez une demande. Nous supprimerons vos informations personnelles, ou les rendrons anonymes, dès que raisonnablement possible en fonction de l'activité de votre compte et dans conformément à la loi applicable. Nous pouvons fermer un compte ou conserver vos informations pour mener une enquête ou si la loi l'exige.
+Pour fermer votre compte avec SGROUPFI(Social Group Finance), visitez l'une de nos succursales ou rendez-vous sur le site Web du produit et soumettez une demande. Nous supprimerons vos informations personnelles, ou les rendrons anonymes, dès que raisonnablement possible en fonction de l'activité de votre compte et dans conformément à la loi applicable. Nous pouvons fermer un compte ou conserver vos informations pour mener une enquête ou si la loi l'exige.
 
 Nous pouvons également conserver les informations de compte pour effectuer l'une des opérations suivantes :
 

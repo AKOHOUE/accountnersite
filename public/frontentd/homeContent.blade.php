@@ -6,8 +6,8 @@
     <div class="container">
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">Voici RFGB Promiximité</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Comptez sur des récompenses, des économies, des perspectives et bien plus encore avec tout compte admissible. Seulement à RFGB.</p>
+          <h2 data-aos="fade-up">Voici SGROUPFI(Social Group Finance) Promiximité</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Comptez sur des récompenses, des économies, des perspectives et bien plus encore avec tout compte admissible. Seulement à SGROUPFI(Social Group Finance).</p>
         </h3>
         <p><strong>Prix de L’innovation de la banque  
         de Détail au Moyen-Orient et en  
