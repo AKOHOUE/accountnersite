@@ -19,6 +19,8 @@
           <li><a href="{{ route('front.services') }}" class="{{ Request::segment(1) === 'services' ? 'active' : null }}">Services</a></li>
           <li><a href="{{ route('front.prot') }}" class="{{ Request::segment(1) === 'prot' ? 'active' : null }}">Votre sécurité</a></li>
           <li><a href="{{ route('front.contact') }}" class="{{ Request::segment(1) === 'contact' ? 'active' : null }}">Contact</a></li>
+          <li><a href="{{ route('front.contact') }}" class="{{ Request::segment(1) === 'contact' ? 'active' : null }}">Emprunter</a></li>
+
           <!--li><a href="https://wa.me/40751819445">WhatsApp  <i style="color:green; font-size: " class="fa fa-whatsapp"></i></a></li-->
  
                @if(auth()->guest())
