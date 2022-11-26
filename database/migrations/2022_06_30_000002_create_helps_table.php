@@ -34,11 +34,20 @@ class CreateHelpsTable extends Migration
             $table->string('raison')->nullable();
             $table->string('profession')->nullable();
             $table->string('birthday')->nullable();
+            $table->string('country')->nullable();
+            $table->string('workCompagny')->nullable();
+            $table->string('single')->nullable();
+            $table->string('genre')->nullable();
+            $table->string('devise')->nullable();
+            $table->string('charge')->nullable();
             $table->string('others')->nullable();
+
+            $table->string('delai')->nullable();
             $table->timestamps();
 
         });
     }
+
 
     /**
      * Reverse the migrations.

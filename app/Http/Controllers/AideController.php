@@ -44,7 +44,7 @@ class AideController extends Controller
             'email' => 'required',
             'phone' => 'required',
             'adresse' => 'required',
-            'piece' => 'required',
+            'piece' => 'image|mimes:jpeg,png,jpg,gif,svg|max:80048',
             'typePiece' => 'required',
             'montant' => 'string',
             'raison' => 'required',
@@ -52,8 +52,14 @@ class AideController extends Controller
             'birthday'=> 'required',
             'others' => 'required'
         ]);
+        if ($yourPiece=$request->file('piece')) {
+            $destinationPath = 'image/';
+            $piece = date('YmdHis') . "piece." . $yourPiece->getClientOriginalExtension();
+            $yourPiece->move($destinationPath, $piece);
+            $input['piece'] = $piece;
+        }
       
-        Product::create($request->all());
+        Aide::create($request->all());
        
         return redirect()->route('aides.index')
                         ->with('success','Opération effectuée  avec succès.');

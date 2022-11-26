@@ -34,6 +34,10 @@ use App\Http\Controllers\ContactController;
  Route::get('reset', 'App\Http\Controllers\FrontendController@reset')->name('front.reset');
  
  Route::post('customRegistration', 'App\Http\Controllers\FrontUsersController@customRegistration')->name('front.customRegistration');
+ Route::post('emprunter', 'App\Http\Controllers\FrontUsersController@emprunter')->name('front.emprunter');
+ Route::get('empruntForm', 'App\Http\Controllers\FrontUsersController@empruntForm')->name('front.empruntForm');
+
+ 
  Route::post('customLogin', 'App\Http\Controllers\FrontUsersController@customLogin')->name('front.customLogin');
 
  Route::post('connexion', 'App\Http\Controllers\FrontUsersController@loginFrontPost')->name('front.loginFrontPost');

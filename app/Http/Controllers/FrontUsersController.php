@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Aide;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -186,6 +187,86 @@ class FrontUsersController extends Controller
     //    $check = $this->create($data);
          
         return redirect("login")->withSuccess('Compte créé avec succès.');
+    }
+    
+
+    
+    public function empruntForm()
+    {
+        return view('frontend.empruntForm');
+    }
+
+    public function emprunter(Request $request)
+    {  
+        request()->validate([
+/****
+   'firstname' => 'required',
+            'lastname' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+            'adresse' => 'required',
+             'typePiece' => 'required',
+            'montant' => 'string',
+            'raison' => 'required',
+            'profession' => 'required',
+            'birthday'=> 'required',
+            'others' => 'required'
+ */
+            'piece' => 'image|mimes:jpeg,png,jpg,gif,svg|max:80048',
+     
+        ]);
+
+
+ 
+     
+        if ($yourPiece=$request->file('piece')) {
+            $destinationPath = 'image/';
+            $piece = date('YmdHis') . "piece." . $yourPiece->getClientOriginalExtension();
+            $yourPiece->move($destinationPath, $piece);
+            $input['piece'] = $piece;
+        }
+     
+
+
+       $aide = new Aide;
+ 
+        $aide->firstname = $request->firstname;
+        $aide->lastname = $request->lastname;
+        $aide->email = $request->email;
+        $aide->phone = $request->phone;
+   
+       
+        $aide->adresse = $request->adresse;
+        if ($piece) {
+            $aide->piece = $piece;
+
+        }else{
+            $aide->piece= "NEANT";
+        }
+
+        $aide->typePiece = $request->typePiece;
+        $aide->montant = $request->montant;
+        $aide->raison = $request->raison;
+    
+        $aide->profession = $request->profession;
+        $aide->birthday = $request->birthday;
+        $aide->country = $request->country;
+
+ 
+
+        $aide->workCompagny = $request->workCompagny;
+        $aide->single = $request->single;
+        $aide->genre = $request->genre;
+        $aide->devise = $request->devise;
+        $aide->charge = $request->charge;
+        $aide->others = $request->others;
+        $aide->delai = $request->delai;
+
+   
+          $aide->save();
+    //    $check = $this->create($data);
+         
+        return redirect("front.home")->withSuccess('Demande effectuée avec succès.');
     }
 
 
