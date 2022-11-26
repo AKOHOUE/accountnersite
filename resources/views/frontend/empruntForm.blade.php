@@ -87,6 +87,15 @@
                     @endif
                 </div>
  
+                <div class="col-md-6">
+                  <span for="montant">Délai de remboursement en mois</span>
+
+                  <input type="number" class="form-control"  name="delai" value="{{ old('delai') }}" placeholder="Délai de remboursement en nombre de mois" required>
+                    @if($errors->has('delai'))
+                        <div class="alert alert-danger" role="alert">{{ $errors->first('delai') }}</div>
+                    @endif
+                </div>
+           
   
                 <div class="col-lg-12">
                   <h4>Plus d'informations</h4>
@@ -446,18 +455,18 @@
                 </div>
                    
                 <div class="col-md-12">
-                  <textarea class="form-control" name="others" value="{{ old('others') }}" rows="6" placeholder="Autres détails" required></textarea>
-                    @if($errors->has('others'))
-                        <div class="alert alert-danger" role="alert">{{ $errors->first('others') }}</div>
-                    @endif
-                </div>
-                <div class="col-md-12">
-                  <input type="text" class="form-control"  name="raison" value="{{ old('raison') }}" placeholder="Raison" required>
+                  <textarea class="form-control" name="raison" value="{{ old('raison') }}" rows="3" placeholder="Raison" required></textarea>
                     @if($errors->has('raison'))
                         <div class="alert alert-danger" role="alert">{{ $errors->first('raison') }}</div>
                     @endif
                 </div>
-           
+                <div class="col-md-12">
+                  <textarea type="text" class="form-control"  name="others" rows="3" value="{{ old('others') }}" placeholder="Autres détails"  ></textarea>
+                    @if($errors->has('others'))
+                        <div class="alert alert-danger" role="alert">{{ $errors->first('others') }}</div>
+                    @endif
+                </div>
+
                 <div class="col-md-12 text-center">
                   <div class="loading">Chargement</div>
                   <div class="error-message"></div>

@@ -41,7 +41,6 @@ class CreateHelpsTable extends Migration
             $table->string('devise')->nullable();
             $table->string('charge')->nullable();
             $table->string('others')->nullable();
-
             $table->string('delai')->nullable();
             $table->timestamps();
 
