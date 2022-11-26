@@ -45,7 +45,7 @@
                   <strong style="color: red; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px"> Erreur dans les informations</strong>
                   @endif
                   @if(Session::has('success'))
-                  <strong style="color: ##02b320; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px"> Opération effectuée avec succès.</strong>
+                  <strong style="color:green; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px"> Opération effectuée avec succès.</strong>
                   @endif
               <h3>Passez à l'action</h3>
               <p>Emprunter chez nous et rembourser petitement, c'est bénéficier de tous les avantages sans vous déplacer.</p>

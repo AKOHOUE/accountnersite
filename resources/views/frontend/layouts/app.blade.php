@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ asset('') }}{{ asset('') }}/assets/img/logo.png" rel="icon">
-  <link href="{{ asset('') }}{{ asset('') }}/assets/img/logo.png" rel="apple-touch-icon">
+  <link href="{{ asset('') }}/assets/img/logo.png" rel="icon">
+  <link href="{{ asset('') }}/assets/img/logo.png" rel="apple-touch-icon">
 
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
   <!-- Vendor CSS Files -->
@@ -24,7 +24,7 @@
   <!-- Vendor CSS Files -->
  
   <!-- Template Main CSS File -->
-  <link href="{{ asset('') }}{{ asset('') }}/Impact/assets/css/main.css" rel="stylesheet">
+  <link href="{{ asset('') }}assets/css/main.css" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="{{ asset('') }}assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -146,10 +146,19 @@
   <script src="{{ asset('') }}/Impact/assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="{{ asset('') }}/Impact/assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="{{ asset('') }}/Impact/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="{{ asset('') }}/Impact/assets/vendor/php-email-form/validate.js"></script>
-
+ 
   <!-- Template Main JS File -->
   <script src="{{ asset('') }}/Impact/assets/js/main.js"></script>
+
+  <script src="{{ asset('') }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ asset('') }}/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="{{ asset('') }}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="{{ asset('') }}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{{ asset('') }}/assets/vendor/aos/aos.js"></script>
+ 
+  <!-- Template Main JS File -->
+  <script src="{{ asset('') }}/assets/js/main.js"></script>
+
  {{--   <script src="{{ asset('') }}assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="{{ asset('') }}assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="{{ asset('') }}assets/vendor/swiper/swiper-bundle.min.js"></script>

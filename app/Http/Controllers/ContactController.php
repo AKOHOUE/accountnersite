@@ -65,7 +65,7 @@ class ContactController extends Controller
          
         $succes = 'Votre message est envoyé avec succès, nous vous repondrons dans un bref délai !';
 
-        return back()->withSuccess($succes);   
+        return  back()->withSuccess($succes);   
      }
 
     /**
@@ -102,7 +102,7 @@ class ContactController extends Controller
             return view('back.contactEdit', compact('contact'));
         }
 
-        return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder."); 
+        return back()->withSuccess("Vous n'êtes pas autorisé à accéder."); 
    }
 
     /**

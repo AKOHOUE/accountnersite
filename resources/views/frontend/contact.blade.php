@@ -72,6 +72,13 @@
 
             <form method="post" action="{{ route('contactsUi.store') }}"  role="form" class="php-email-form">
 						@csrf
+            
+              @if($errors->all())
+              <strong style="color: red; font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px"> Erreur dans les informations</strong>
+              @endif
+              @if(Session::has('success'))
+              <strong style="color:rgb(0, 19, 128); font-size: 16px; margin: 20px 0px 10px 0px; padding: 5px"> Opération effectuée avec succès. Nous vous contacterons sous peu.</strong>
+              @endif
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nom et prénom(s)" required>

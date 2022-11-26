@@ -266,7 +266,7 @@ class FrontUsersController extends Controller
           $aide->save();
     //    $check = $this->create($data);
          
-        return redirect("front.home")->withSuccess('Demande effectuée avec succès.');
+        return back()->withSuccess('Demande effectuée avec succès.');
     }
 
 
@@ -306,6 +306,81 @@ class FrontUsersController extends Controller
       ]);
     }    
     
+
+    public function aides()
+    {
+        if(Auth::check()){
+            $aides = Aide::all();
+
+            return view('back.aides', compact('aides'));
+        }
+  
+        return redirect("adminConnexion")->withSuccess("Vous n'êtes pas autorisé à accéder."); 
+    }
+
+ 
+    public function detailDemandeAide($id)
+    {
+     
+        if(Auth::check()){
+            $aide = Aide::findOrFail($id);
+
+            return view('back.detailAide', compact('aide'));
+        }
+
+        return back()->withSuccess("Vous n'êtes pas autorisé à accéder."); 
+   }
+   public function modificationDemandeAide($id)
+   {
+      $aide = Aide::findOrFail($id);
+      $aide = new Aide;
+    
+      $aide->firstname = $request->firstname;
+      $aide->lastname = $request->lastname;
+      $aide->email = $request->email;
+      $aide->phone = $request->phone;
+ 
+     
+      $aide->adresse = $request->adresse;
+      if ($piece) {
+          $aide->piece = $piece;
+
+      }else{
+          $aide->piece= "NEANT";
+      }
+
+      $aide->typePiece = $request->typePiece;
+      $aide->montant = $request->montant;
+      $aide->raison = $request->raison;
+  
+      $aide->profession = $request->profession;
+      $aide->birthday = $request->birthday;
+      $aide->country = $request->country;
+
+
+
+      $aide->workCompagny = $request->workCompagny;
+      $aide->single = $request->single;
+      $aide->genre = $request->genre;
+      $aide->devise = $request->devise;
+      $aide->charge = $request->charge;
+      $aide->others = $request->others;
+      $aide->delai = $request->delai;
+
+ 
+        $aide->save();
+
+       return redirect()->route('back.aides');
+   }
+
+   public function deleteDemandeAide($id)
+   {
+       $aide = Aide::findOrFail($id);
+       $aide->delete();
+
+       return redirect()->route('back.aides');
+   }
+
     public function dashboard()
     {
         if(Auth::check()){

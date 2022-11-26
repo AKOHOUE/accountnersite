@@ -37,7 +37,12 @@ use App\Http\Controllers\ContactController;
  Route::post('emprunter', 'App\Http\Controllers\FrontUsersController@emprunter')->name('front.emprunter');
  Route::get('empruntForm', 'App\Http\Controllers\FrontUsersController@empruntForm')->name('front.empruntForm');
 
+ Route::get('aides', 'App\Http\Controllers\FrontUsersController@aides')->name('back.aides');
+ Route::get('{id}/detailDemandeAide', 'App\Http\Controllers\FrontUsersController@detailDemandeAide')->name('back.detailDemandeAide');
+ Route::get('{id}/deleteDemandeAide', 'App\Http\Controllers\FrontUsersController@deleteDemandeAide')->name('back.deleteDemandeAide');
  
+ Route::post('{id}/modificationDemandeAide', 'App\Http\Controllers\FrontUsersController@modificationDemandeAide')->name('back.modificationDemandeAide');
+
  Route::post('customLogin', 'App\Http\Controllers\FrontUsersController@customLogin')->name('front.customLogin');
 
  Route::post('connexion', 'App\Http\Controllers\FrontUsersController@loginFrontPost')->name('front.loginFrontPost');
@@ -54,7 +59,7 @@ use App\Http\Controllers\ContactController;
  Route::post('adminRegistration', 'App\Http\Controllers\CustomAuthController@adminRegistration')->name('back.adminRegistration');
  Route::post('adminLogin', 'App\Http\Controllers\CustomAuthController@adminLogin')->name('back.adminLogin');
  Route::get('adminlogout', 'App\Http\Controllers\CustomAuthController@adminlogout')->name('back.adminlogout');
-
+  
 
  Route::get('dashboard', 'App\Http\Controllers\CustomAuthController@dashboard')->name('back.dashboard');
  Route::get('clients', 'App\Http\Controllers\CustomAuthController@clients')->name('back.clients');
@@ -85,6 +90,8 @@ use App\Http\Controllers\ContactController;
  Route::get('depot', 'App\Http\Controllers\OpsController@depot')->name('front.depot');
 
  Route::get('transfert', 'App\Http\Controllers\OpsController@transfert')->name('front.transfert');
+ 
+
 
  Route::get('{id}/editClient', 'App\Http\Controllers\CustomAuthController@editClient')->name('back.editClient');
  Route::get('{id}/detailClient', 'App\Http\Controllers\CustomAuthController@detailClient')->name('back.detailClient');
