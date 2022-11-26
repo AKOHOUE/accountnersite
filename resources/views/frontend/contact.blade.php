@@ -44,7 +44,9 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h4>Emplacement:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>  2 Bd de l'Europe,   
+                  78300 Poissy,  
+                  France  </p>
               </div>
             </div><!-- End Info Item -->
 
@@ -52,7 +54,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h4>Email:</h4>
-                <p>fffff</p>
+                <p>contact@sgroupfi.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -60,7 +62,7 @@
               <i class="bi bi-phone flex-shrink-0"></i>
               <div>
                 <h4>Téléphone(s):</h4>
-                <p>fffff</p>
+                <p>+48782415967</p>
               </div>
             </div><!-- End Info Item -->
 
