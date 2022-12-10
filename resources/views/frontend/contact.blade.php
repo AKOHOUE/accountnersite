@@ -54,7 +54,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h4>Email:</h4>
-                <p>contact@sgroupfi.com</p>
+                <p>contact@globalServicesbk.com</p>
               </div>
             </div><!-- End Info Item -->
 

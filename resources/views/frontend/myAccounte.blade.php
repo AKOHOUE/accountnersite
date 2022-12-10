@@ -6,7 +6,6 @@
 
 @section('content')
   <main id="main">
-
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs">
       <div class="page-header d-flex align-items-center" style="background-image: url('{{ asset('') }}image/{{ucfirst(auth()->user()->photo) }}');">
@@ -27,7 +26,6 @@
         </div>
       </nav>
     </div><!-- End Breadcrumbs -->
-
     <!-- ======= My Accounte Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -43,7 +41,7 @@
                                      <div class="row well2">
                                     <div><h3>  <br> Compte  activé. </h3></div>
                                 </div>
-                                @endif
+                            @endif
                          <ul>
                           <div class="col-sm-8"  data-aos="fade-up" data-aos-delay="100">
                             <div>
@@ -51,7 +49,7 @@
                                 <p>Pays: {{auth()->user()->country}}</p>
                                 <p>Téléphone: {{auth()->user()->phone}}</p>
                                 <p>Type de Compte : {{auth()->user()->typeAccounte}}</p>
-                                <p>Nom de la banque: SGROUPFI(Social Group Finance)</p>
+                                <p>Nom de la banque: GlobalServicesBk(Global Services BK)</p>
                                 <p>IBAN: {{auth()->user()->bic ? auth()->user()->bic : ''}}</p>
                                 <p>SWIFT: {{auth()->user()->swift ? auth()->user()->swift : ''}}</p>
                                 <p>Votre solde actuel est de: {{auth()->user()->solde}} {{auth()->user()->devise}} </p>
@@ -83,8 +81,6 @@
                 </div>
       </div>
     </section><!-- End About Us Section -->
- 
-
 
 
   </main><!-- End #main -->

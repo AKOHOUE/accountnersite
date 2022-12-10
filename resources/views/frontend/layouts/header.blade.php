@@ -14,7 +14,6 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="{{ route('front.home') }}"   class="{{ Request::segment(1) === '' ? 'active' : null }}" >Accueil</a></li>
           <li><a href="{{ route('front.about') }}" class="{{ Request::segment(1) === 'about' ? 'active' : null }}">Découverte</a></li>
           <li><a href="{{ route('front.services') }}" class="{{ Request::segment(1) === 'services' ? 'active' : null }}">Services</a></li>
           <li><a href="{{ route('front.prot') }}" class="{{ Request::segment(1) === 'prot' ? 'active' : null }}">Votre sécurité</a></li>

@@ -276,7 +276,7 @@ Il en résulte un système de sécurisation complet et complexe.
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-Je suis fière de me faire accompagner par SGROUPFI(Social Group Finance) dans la réalisations de mes projets professionnels.                   <i class="bi bi-quote quote-icon-right"></i>
+Je suis fière de me faire accompagner par GlobalServicesBk(Global Services BK) dans la réalisations de mes projets professionnels.                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
@@ -290,7 +290,7 @@ Je suis fière de me faire accompagner par SGROUPFI(Social Group Finance) dans l
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-Le groupe le plus scial que SGROUPFI(Social Group Finance) je n'ai pas encore vu dans dans le monde.                  <i class="bi bi-quote quote-icon-right"></i>
+Le groupe le plus scial que GlobalServicesBk(Global Services BK) je n'ai pas encore vu dans dans le monde.                  <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
@@ -399,14 +399,14 @@ Une personne travaillant pour un Contrôleur ou un Sous-traitant ayant une conna
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
                     <i class="bi bi-question-circle question-icon"></i>
-Comment SGROUPFI(Social Group Finance) s'assure-t-elle que les informations de l'utilisateur sont protégées après leur partage avec les vors ?                  </button>
+Comment GlobalServicesBk(Global Services BK) s'assure-t-elle que les informations de l'utilisateur sont protégées après leur partage avec les vors ?                  </button>
                 </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
                     <i class="bi bi-question-circle question-icon"></i>
 peut partager les informations de l'utilisateur avec des processeurs tiers (tels que des prestataires de services ou des VOR). Les contrats avec des sous-traitants tiers nécessitent des mesures de sécurité techniques et organisationnelles suffisantes, limitent l'utilisation des informations de l'utilisateur aux fins définies par les affiliés et conservent le contrôle des informations de l'utilisateur, le cas échéant.
 
-En outre, SGROUPFI(Social Group Finance) ne transférera les informations utilisateur des utilisateurs situés dans l'UE qu'à des processeurs tiers qui offrent un niveau de protection adéquat lors du traitement des informations utilisateur (par exemple en concluant des contrats basés sur les clauses types pour le transfert des informations utilisateur de l'UE aux processeurs établis dans des pays tiers publiés par la Commission européenne). Les accords avec des sous-traitants tiers prévoient des recours juridiques en cas de violation de l'accord.                  </div>
+En outre, GlobalServicesBk(Global Services BK) ne transférera les informations utilisateur des utilisateurs situés dans l'UE qu'à des processeurs tiers qui offrent un niveau de protection adéquat lors du traitement des informations utilisateur (par exemple en concluant des contrats basés sur les clauses types pour le transfert des informations utilisateur de l'UE aux processeurs établis dans des pays tiers publiés par la Commission européenne). Les accords avec des sous-traitants tiers prévoient des recours juridiques en cas de violation de l'accord.                  </div>
                 </div>
               </div><!-- # Faq item-->
 
@@ -418,7 +418,7 @@ Comment fermer mon compte ?                  </button>
                 </h3>
                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-Pour fermer votre compte avec SGROUPFI(Social Group Finance), visitez l'une de nos succursales ou rendez-vous sur le site Web du produit et soumettez une demande. Nous supprimerons vos informations personnelles, ou les rendrons anonymes, dès que raisonnablement possible en fonction de l'activité de votre compte et dans conformément à la loi applicable. Nous pouvons fermer un compte ou conserver vos informations pour mener une enquête ou si la loi l'exige.
+Pour fermer votre compte avec GlobalServicesBk(Global Services BK), visitez l'une de nos succursales ou rendez-vous sur le site Web du produit et soumettez une demande. Nous supprimerons vos informations personnelles, ou les rendrons anonymes, dès que raisonnablement possible en fonction de l'activité de votre compte et dans conformément à la loi applicable. Nous pouvons fermer un compte ou conserver vos informations pour mener une enquête ou si la loi l'exige.
 
 Nous pouvons également conserver les informations de compte pour effectuer l'une des opérations suivantes :
 

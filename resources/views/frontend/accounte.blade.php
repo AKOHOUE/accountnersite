@@ -78,20 +78,20 @@
                         <div class="alert alert-danger" role="alert">{{ $errors->first('phone') }}</div>
                     @endif
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                    <span for="photo">Choisir photo votre  d'identité</span>
                   <input type="file" accept="image/*" name="photo" class="form-control" placeholder="Votre photo d'identité" required>
                   @if($errors->has('photo'))
                         <div class="alert alert-danger" role="alert">{{ $errors->first('photo') }}</div>
                     @endif
                 </div>
-                <div class="col-md-6">
+                <!--div class="col-md-6">
                                   <span for="compteSolde">Montant initial au moins 10$</span>
                   <input type="number" name="compteSolde" class="form-control" value="{{ old('compteSolde') }}" placeholder="Dépôt initial pour ouverture de compte" required>
-                   @if($errors->has('compteSolde'))
+                 //  @if($errors->has('compteSolde'))
                         <div class="alert alert-danger" role="alert">{{ $errors->first('compteSolde') }}</div>
-                    @endif
-                </div>
+                   // @endif
+                </div-->
  
   
                 <div class="col-lg-12">

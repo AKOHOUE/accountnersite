@@ -6,7 +6,7 @@
           <a href="{{ route('front.home') }}" class="logo d-flex align-items-center">
             <img src="{{ asset('') }}assets/img/logo.png" alt=""> 
           </a>
-          <p>Social Group Finance (SGROUPFI) </p>
+          <p>Global Services BK (GlobalServicesBk) </p>
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -32,7 +32,7 @@
             78300 Poissy, 
             France <br> 
             <strong>Phone:</strong> +48782415967<br>
-            <strong>Email:</strong> contact@sgroupfi.com<br>
+            <strong>Email:</strong> contact@globalservicesbk.com<br>
           </p>
 
         </div>
@@ -42,7 +42,7 @@
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Social Group Finance (SGROUPFI)</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Global Services BK (GlobalServicesBk)</span></strong>. All Rights Reserved
       </div>
       
     </div>
